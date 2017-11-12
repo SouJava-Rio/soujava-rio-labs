@@ -6,4 +6,4 @@ Aqui estão contribuições de soluções utilizando JSF + outros recursos + fra
 
 Projeto         | Descrição
 --------------- | -------------
-[jsf-sample-cdi-validation](#) | Projeto utilizando JSF + CDI + Validation + [BootFaces](https://www.bootsfaces.net)
+[jsf-sample-cdi-validation](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/jsf-samples/jsf-sample-cdi-validation) | Projeto utilizando JSF + CDI + Validation + [BootFaces](https://www.bootsfaces.net)
