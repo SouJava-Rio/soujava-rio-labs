@@ -1,5 +1,5 @@
 # JSF + CDI + Validation
-Projeto utilizando
+Projeto utilizado para exemplificar a utilização de CDI e Validation.
 
 ## Tech Stack
 * Java 8
