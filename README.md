@@ -6,4 +6,4 @@ Laboratório de projetos para pesquisa e ou aprendizado. O objetivo desse reposi
 
 Exemplo         | Descrição
 --------------- | -------------
-[Exemplos de JSF](#) | Exemplos diversos de projetos utilizando JSF
+[Exemplos de JSF](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/jsf-samples) | Exemplos diversos de projetos utilizando JSF
