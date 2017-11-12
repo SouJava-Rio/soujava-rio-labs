@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NOTE: antiJARLocking is not supported by Tomcat ==> Remove from context.xml -->
+<Context path="/jsf-sample-cdi-validation">
+  <Resource auth="Container" factory="org.jboss.weld.resources.ManagerObjectFactory" name="BeanManager" type="javax.enterprise.inject.spi.BeanManager"/>
+</Context>

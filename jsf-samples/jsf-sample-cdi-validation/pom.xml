@@ -1,0 +1,246 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>br.org.rio.soujava</groupId>
+	<artifactId>jsf-sample-cdi-validation</artifactId>
+	<name>Sample - JSF + CDI + Validation </name>
+	<packaging>war</packaging>
+	<version>1.0</version>
+
+	<organization>
+		<name>SouJava {RIO}</name>
+	</organization>
+
+	<properties>
+		<maven.min.version>3.0.0</maven.min.version>
+		<java.version>1.8</java.version>
+		<java.min.version>${java.version}</java.min.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<javaee-api.version>7.0</javaee-api.version>
+		<cdi.version>1.2</cdi.version>
+		<jsf.version>2.2</jsf.version>
+		<servlet.version>3.1.0</servlet.version>
+		<weld.version>2.2.6.Final</weld.version>
+
+		<tomcat.version>8.5.6</tomcat.version>
+		<payara.version>4.1.2.173</payara.version>
+		<wildfly.swarm.version>2017.4.0</wildfly.swarm.version>
+
+	</properties>
+
+	<prerequisites>
+		<maven>${maven.min.version}</maven>
+	</prerequisites>
+
+	<repositories>
+		<repository>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+
+		<repository>
+			<id>ossrh</id>
+			<name>Sonatype-snapshot</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<dependencies>
+
+
+		<!-- Additional JEE Specs -->
+		<!-- ==================== -->
+		<!-- http://mvnrepository.com/open-source/java-specs -->
+		<!-- Note that for added specs, we should also provide -->
+		<!-- a runtime version (Implementation). -->
+
+		<!-- CDI - JSR-299 = JSR-330 (DI) + JSR-341 (EL) + JSR-318 (Interceptors) 
+			+ More (scopes etc) -->
+
+		<dependency>
+			<groupId>javax.enterprise</groupId>
+			<artifactId>cdi-api</artifactId>
+			<version>${cdi.version}</version>
+		</dependency>
+
+		<!-- DI - JSR-330: Inject, Qualifier, Scope, Singleton, Named, and Provider -->
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<scope>provided</scope>
+			<version>1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>${javaee-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- JSF API -->
+		<dependency>
+			<groupId>javax.faces</groupId>
+			<artifactId>javax.faces-api</artifactId>
+			<version>${jsf.version}</version>
+		</dependency>
+
+		<!-- Bean Validation API (JSR 303) -->
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.1.0.Final</version>
+		</dependency>
+
+		<!-- Additional JEE Implementations (Run-Times) -->
+		<!-- =========================================== -->
+
+		<!-- This is the Mojarra Implementation of JSF 2.2 -->
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.faces</artifactId>
+			<version>2.2.12</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>net.bootsfaces</groupId>
+			<artifactId>bootsfaces</artifactId>
+			<version>1.1.3</version>
+			<scope>compile</scope>
+		</dependency>
+		<!-- CDI 1.2 Impl: http://weld.cdi-spec.org -->
+		<!-- <dependency> <groupId>org.jboss.weld.servlet</groupId> <artifactId>weld-servlet</artifactId> 
+			<version>${weld.version}</version> <scope>runtime</scope> </dependency> -->
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servlet.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Bean Validation Implementation -->
+		<!-- Provides portable constraints such as @NotEmpty, @Email and @Url -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.2.3.Final</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>5.0.7.Final</version>
+			<scope>runtime</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.0.0</version>
+				<configuration>
+					<attachClasses>true</attachClasses>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<configuration>
+					<rules>
+						<requireMavenVersion>
+							<message>At least Maven in version ${maven.min.version} is
+								required.</message>
+							<version>${maven.min.version}</version>
+						</requireMavenVersion>
+						<requireJavaVersion>
+							<message>At least a JDK in version ${java.min.version} is
+								required.</message>
+							<version>${java.min.version}</version>
+						</requireJavaVersion>
+					</rules>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-enforcer-plugin</artifactId>
+					<version>1.3.1</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.19.1</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<profiles>
+
+		<profile>
+			<id>wildfly-swarm</id>
+
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.wildfly.swarm</groupId>
+						<artifactId>wildfly-swarm-plugin</artifactId>
+						<version>${wildfly.swarm.version}</version>
+						<executions>
+							<execution>
+								<goals>
+									<goal>package</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+
+		</profile>
+
+
+	</profiles>
+</project>
