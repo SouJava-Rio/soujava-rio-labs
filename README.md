@@ -7,3 +7,4 @@ Laboratório de projetos para pesquisa e ou aprendizado. O objetivo desse reposi
 Exemplo         | Descrição
 --------------- | -------------
 [Exemplos de JSF](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/jsf-samples) | Pasta de exemplos diversos de projetos utilizando JSF
+[Exemplos de JAX-RS](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/jax-rs-samples) | Pasta de exemplos diversos de projetos utilizando JAX-RS
