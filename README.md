@@ -10,3 +10,4 @@ Exemplo         | Descrição
 [Exemplos de JAX-RS](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/jax-rs-samples) | Pasta de exemplos diversos de projetos utilizando JAX-RS
 [Exemplos de Java EE 8](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/JavaEE8-samples) | Pasta de exemplos de Java EE 8
 [Exemplos de MicroProfile](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/microprofile) | Pasta de exemplos de MicroProfile
+[Exemplos de Struts 1/2](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/struts-samples) | Pasta de exemplos de Struts 1/2
