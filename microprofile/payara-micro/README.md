@@ -35,9 +35,4 @@ sudo docker rm demo
 
 ## Links informativos
 
-* Leonéia Evangelista. - [O que é o HTTP2 e quais os seus benefícios?](https://www.kinghost.com.br/blog/2017/04/o-que-e-o-http2-e-quais-os-seus-beneficios/)
-* Java Servlet 4 [Java Servlet 4](http://jcp.org/en/jsr/detail?id=369)
-
-## Links informativos
-
 * Payara-Micro [Payara-Micro](https://www.payara.fish/payara_micro)
