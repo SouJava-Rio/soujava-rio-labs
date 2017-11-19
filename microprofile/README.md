@@ -12,4 +12,6 @@ Projeto         | Descrição
 
 ## Links informativos
 
-* 
+* MicroProfile [MicroProfile](https://microprofile.io/)
+* MicroProfile-Config [Microprofile-Config](https://microprofile.io/project/eclipse/microprofile-config)
+* Json-P [JSON-P](https://javaee.github.io/jsonp/)
