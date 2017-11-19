@@ -1,0 +1,6 @@
+FROM jboss/base-jdk:8
+
+ADD /target/Servlet4-sample-microbundle.jar /opt/servlet4.jar
+
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "/opt/servlet4.jar", "-Djava.net.preferIPv4Stack=true"]
