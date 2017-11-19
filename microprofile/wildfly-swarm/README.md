@@ -1,12 +1,40 @@
 # Exemplo MicroProfile-Wildfly-Swarm
 
 
-## Projeto
+## Executando o projeto
 
-Projeto         | Descrição
---------------- | -------------
-[Wildfly-Swarm](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/microprofile/wildfly-swarm) | Projeto utilizando Wildfly-Swarm
+mvn clean package  - para gerar o uber-Jar
+
+mvn  wildfly-swarm:run - para executar o app
+
+ou java -jar microprofile-sample-swarm.jar dentro da pasta target/
+
+URL -> http://locahost:8080/app/JUG
+
+# Docker
+
+No local do Dockerfile executar :
+
+## BUILD 
+
+sudo docker build -t microprofile-swarm-demo . 
+
+logo depois :
+
+## executar
+
+sudo docker run --name demo -p 8080:8080 microprofile-swarm-demo
+
+acesse a URL -> http://locahost:8080/app/JUG
+
+## Para e remover o conteiner
+
+sudo docker stop demo
+
+sudo docker rm demo
 
 ## Links informativos
 
-*
+* Wildfly-Swarm[wildfly-swarm.io](http://wildfly-swarm.io/)
+
+* Wildfly Microprofile Config [wildfly-microprofile-config](https://github.com/wildfly-extras/wildfly-microprofile-config)
