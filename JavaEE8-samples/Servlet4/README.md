@@ -30,7 +30,7 @@ logo depois :
 
 ## executar
 
-sudo docker run --name demo -p 8080:8080 -h localhot servlet4-demo
+sudo docker run --name demo -p 8080:8080 -h localhost servlet4-demo
 
 acesse a URL -> http://localhost:8080/Servlet4-sample-1.0/
 
