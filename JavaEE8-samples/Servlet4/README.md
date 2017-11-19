@@ -34,7 +34,7 @@ sudo docker run --name demo -p 8080:8080 -h localhost servlet4-demo
 
 acesse a URL -> http://localhost:8080/Servlet4-sample-1.0/
 
-## Para e remover o conteiner
+## Para e remover o Container
 
 sudo docker stop demo
 
