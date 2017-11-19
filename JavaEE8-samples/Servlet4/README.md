@@ -11,6 +11,7 @@ Projeto utilizado para exemplificar a utilização de Server Push/HTTP2
 ## Executando o projeto
 
 mvn clean install payara-micro:bundle - para gerar o uber-Jar
+
 mvn  payara-micro:start - para executar o app
 
 ou java -jar Servlet4-sample-microbundle.jar dentro da pasta target/
