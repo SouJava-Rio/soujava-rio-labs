@@ -1,0 +1,98 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.org.soujava.rio</groupId>
+	<artifactId>Struts-1-simples</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>Struts1-simples</name>
+
+	<organization>
+		<name>SouJava { Rio }</name>
+		<url>http://soujava-rio.github.io</url>
+	</organization>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+		<version.payara>1.0.0</version.payara>
+	</properties>
+
+	<developers>
+		<developer>
+			<name>Daniel Dias</name>
+			<email>daniel.dias@soujava.org.br</email>
+			<organization>SouJava { Rio }</organization>
+		</developer>
+	</developers>
+
+	<dependencies>
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>7.0</version>
+		</dependency>
+
+		<!-- Struts 1.3 framework -->
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts-core</artifactId>
+			<version>1.3.10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts-taglib</artifactId>
+			<version>1.3.10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts-extras</artifactId>
+			<version>1.3.10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts-tiles</artifactId>
+			<version>1.3.10</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>Struts1-simples</finalName>
+		<plugins>
+			<plugin>
+				<groupId>fish.payara.maven.plugins</groupId>
+				<artifactId>payara-micro-maven-plugin</artifactId>
+				<version>${version.payara}</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>bundle</goal>
+							<goal>start</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<useUberJar>true</useUberJar>
+					<deployWar>false</deployWar>
+					<daemon>false</daemon>
+					<payaraVersion>5.0.0.Alpha3</payaraVersion>
+					<artifactItem>
+						<groupId>fish.payara.extras</groupId>
+						<artifactId>payara-micro</artifactId>
+						<version>5.0.0.Alpha3</version>
+					</artifactItem>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
