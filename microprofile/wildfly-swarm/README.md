@@ -1,5 +1,11 @@
 # Exemplo MicroProfile-Wildfly-Swarm
 
+## Tech Stack
+* Java 8
+* Maven 3(Versão mínima)
+* Jax-RS,CDI,JSON-P 
+* Docker
+* Wildfly-Swarm
 
 ## Executando o projeto
 

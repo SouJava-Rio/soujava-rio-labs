@@ -1,5 +1,11 @@
 # Exemplo MicroProfile-Payara-Micro
 
+## Tech Stack
+* Java 8
+* Maven 3(Versão mínima)
+* Jax-RS,CDI,JSON-P 
+* Docker
+* Payara-micro
 
 ## Executando o projeto
 
