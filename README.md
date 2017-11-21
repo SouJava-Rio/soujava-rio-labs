@@ -12,3 +12,4 @@ Exemplo         | Descrição
 [Exemplos de MicroProfile](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/microprofile) | Pasta de exemplos de MicroProfile
 [Exemplos de Struts 1/2](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/struts-samples) | Pasta de exemplos de Struts 1/2
 [Exemplos de Spring](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/spring-samples) | Pasta de exemplos de Spring
+[Exemplos de Spark](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/spark-samples) | Pasta de exemplos de Spark
