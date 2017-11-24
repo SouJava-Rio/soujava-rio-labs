@@ -6,7 +6,8 @@ Aqui estão contribuições das apis do Java EE 8
 
 Projeto         | Descrição
 --------------- | -------------
-[Servlet 4](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/JavaEE8-samples/Servlet4) | Projeto utilizando o ServerPush/HTTP2 do Servlet 4
+* [Servlet 4](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/JavaEE8-samples/Servlet4) | Projeto utilizando o ServerPush/HTTP2 do Servlet 4
+* [Json-B](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/JavaEE8-samples/Json-B) | Projeto utilizando JSON-B
 
 
 ## Links informativos
