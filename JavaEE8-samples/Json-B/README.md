@@ -23,7 +23,7 @@ Serializando a Classe
     "descricao": "Comunidade Java do Rio",
     "leaders": [
         "Daniel Dias",
-        "Paulo Sim?es",
+        "Paulo Simões",
         "Ulisses Telemaco"
     ],
     "localidade": {
@@ -36,7 +36,7 @@ Serializando a Classe
 ```bash
 Deserializar a Classe
 
-JUG(nome=SouJava-Rio, leaders=[Daniel Dias, Paulo Sim?es, Ulisses Telemaco], 
+JUG(nome=SouJava-Rio, leaders=[Daniel Dias, Paulo Simões, Ulisses Telemaco], 
 descricao=Comunidade Java do Rio, localidade=Localidade(estado=RJ, pais=Brasil))
 ```
 
