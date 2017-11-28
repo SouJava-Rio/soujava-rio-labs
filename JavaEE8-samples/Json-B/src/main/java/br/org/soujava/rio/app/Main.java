@@ -19,27 +19,27 @@ import br.org.soujava.rio.model.Localidade;
 public class Main {
 	public static void main(String[] args) {
 
-		JsonbConfig jsonbConfig = new JsonbConfig().withFormatting(true);
-		Jsonb jsonb = JsonbBuilder.create(jsonbConfig);
+	JsonbConfig jsonbConfig = new JsonbConfig().withFormatting(true);
+	Jsonb jsonb = JsonbBuilder.create(jsonbConfig);
 
-		System.out.println("Serializando a Classe");
+	System.out.println("Serializando a Classe");
 
-		List<String> leaders = Arrays.asList("Daniel Dias","Paulo Simões", "Ulisses Telemaco");
-		
-		JUG jug = JUG.builder()
-				.nome("SouJava-Rio")
-				.leaders(leaders)
-				.descricao("Comunidade Java do Rio")
-				.localidade(new Localidade("RJ", "Brasil"))
-				.build();
-		
-		String serializado = jsonb.toJson(jug);
-		System.out.println(serializado);
-		
-		System.out.println("Deserializar a Classe");
-		
-		JUG jugDeserializar = jsonb.fromJson(serializado, JUG.class);
-		System.out.println("\n" + jugDeserializar);
-		
+	List<String> leaders = Arrays.asList("Daniel Dias", "Paulo Simões", "Ulisses Telemaco");
+
+	JUG jug = JUG.builder()
+				 .nome("SouJava-Rio")
+				 .leaders(leaders)
+				 .descricao("Comunidade Java do Rio")
+				 .localidade(new Localidade("RJ", "Brasil"))
+				 .build();
+
+	String serializado = jsonb.toJson(jug);
+	System.out.println(serializado);
+
+	System.out.println("Deserializar a Classe");
+
+	JUG jugDeserializar = jsonb.fromJson(serializado, JUG.class);
+	System.out.println("\n" + jugDeserializar);
+
 	}
 }
