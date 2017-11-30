@@ -2,6 +2,8 @@
 Aqui estão contribuições de projetos que usam Struts 1/2
 
 ## Projetos
+Projeto         | Descrição
+--------------- | -------------
 [Struts-1-Simples](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/struts-samples/struts-1/Struts1-simples) | Projeto utilizando Struts1 com formulario simples.
 
 ## Links informativos
