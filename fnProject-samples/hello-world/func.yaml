@@ -1,0 +1,4 @@
+version: 0.0.3
+runtime: java9
+cmd: br.org.soujava.rio.fn.Function::jug
+format: http
