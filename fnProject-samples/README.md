@@ -5,7 +5,7 @@
 
 Projeto         | Descrição
 --------------- | -------------
-[Hello-World](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/fnProject-samples/hello-word) | Projeto utilizando Fn Java Functions Developer Kit
+[Hello-World](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/fnProject-samples/hello-world) | Projeto utilizando Fn Java Functions Developer Kit
 
 
 ## Links informativos
