@@ -20,7 +20,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
 package br.org.soujava.rio.fn;
 
 /**
@@ -29,12 +28,30 @@ package br.org.soujava.rio.fn;
  * daniel.dias@soujava.org.br
  * twitter:@danieldiasjava
  */
-import java.util.Arrays;
+public class Localidade {
 
-public class Function {
+	private String estado;
+	private String pais;
 
-	public JUG jug() {
-		return new JUG("SouJava-Rio", Arrays.asList("Daniel", "Paulo", "Ulisses"),
-				new Localidade("Rio de Janeiro","Brasil"));
+	public String getEstado() {
+		return estado;
+	}
+
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+
+	public String getPais() {
+		return pais;
+	}
+
+	public void setPais(String pais) {
+		this.pais = pais;
+	}
+
+	public Localidade(String estado, String pais) {
+		super();
+		this.estado = estado;
+		this.pais = pais;
 	}
 }

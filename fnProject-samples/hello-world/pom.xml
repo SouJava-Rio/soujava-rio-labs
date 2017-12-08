@@ -5,20 +5,19 @@
 	<groupId>br.org.soujava.rio</groupId>
 	<artifactId>hello-world</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<build>
-		<finalName>hello-world</finalName>
-	</build>
+
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<fdk.version>1.0.51</fdk.version>
 	</properties>
 
 	<organization>
 		<name>SouJava { Rio }</name>
 		<url>http://soujava-rio.github.io</url>
 	</organization>
-	
+
 	<developers>
 		<developer>
 			<name>Daniel Dias</name>
@@ -26,4 +25,35 @@
 			<organization>SouJava { Rio }</organization>
 		</developer>
 	</developers>
+
+	<build>
+		<finalName>hello-world</finalName>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>fn-release-repo</id>
+			<url>https://dl.bintray.com/fnproject/fnproject</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.fnproject.fn</groupId>
+			<artifactId>api</artifactId>
+			<version>${fdk.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fnproject.fn</groupId>
+			<artifactId>testing</artifactId>
+			<version>${fdk.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 </project>

@@ -1,3 +1,5 @@
+package br.org.soujava.rio.fn;
+
 /*
  * The MIT License
  * Copyright © 2017 Daniel Dias
@@ -21,7 +23,7 @@
  * THE SOFTWARE.
  */
 
-package br.org.soujava.rio.fn;
+import java.util.List;
 
 /**
  * @author Daniel Dias
@@ -29,12 +31,31 @@ package br.org.soujava.rio.fn;
  * daniel.dias@soujava.org.br
  * twitter:@danieldiasjava
  */
-import java.util.Arrays;
+public class JUG {
 
-public class Function {
+	private String jug;
+	private List<String> lideres;
+	private Localidade localidade;
 
-	public JUG jug() {
-		return new JUG("SouJava-Rio", Arrays.asList("Daniel", "Paulo", "Ulisses"),
-				new Localidade("Rio de Janeiro","Brasil"));
+	public String getJug() {
+		return jug;
+	}
+
+	public List<String> getLideres() {
+		return lideres;
+	}
+
+	public JUG(String jug, List<String> lideres, Localidade localidade) {
+		this.jug = jug;
+		this.lideres = lideres;
+		this.localidade = localidade;
+	}
+
+	public Localidade getLocalidade() {
+		return localidade;
+	}
+
+	public void setLocalidade(Localidade localidade) {
+		this.localidade = localidade;
 	}
 }
