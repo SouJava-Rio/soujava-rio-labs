@@ -8,7 +8,37 @@ Projeto utilizado para exemplificar a utilização de FDK-Java
 
 ## Executando o projeto
 
- a fazer .
+### 1 - Instalar o Fn CLI 
+```bash 
+curl -LSs https://raw.githubusercontent.com/fnproject/cli/master/install | sh 
+```
+
+### 2 - build 
+    ```bash 
+    fn build
+    ```
+### 3 - executando 
+    ```bash
+    fn run
+  ```
+
+  ```json
+{
+"jug":"SouJava-Rio",
+"lideres":["Daniel","Paulo","Ulisses"],
+"localidade":
+    {
+    "estado":"Rio de Janeiro","pais":"Brasil"
+    }
+}
+```
+### 4 - modo http 
+ - Em um ternimal digitar fn start para inicar o servidor.
+ - abra outra aba do terminal e digite o seguinte comando : 
+   fn deploy --app nomeDaMinhaAPP --local
+ - logo depois executar -> fn call nomeDaMinhaAPP /hello-world
+
+ ou via browser -> http://localhost:8080/r/nomeDaMinhaAPP/hello-world 
 
 ## Links informativos
 
