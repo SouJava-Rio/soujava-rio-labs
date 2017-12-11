@@ -1,0 +1,26 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){
+  background-color: rgba(106, 141, 173, 0.71);
+  color: white;
+}
+
+th {
+  background-color: #213E8D;
+  color: white;
+}
+
+a{
+  cursor: pointer;
+  cursor: hand;
+  text-decoration:underline;
+
+}

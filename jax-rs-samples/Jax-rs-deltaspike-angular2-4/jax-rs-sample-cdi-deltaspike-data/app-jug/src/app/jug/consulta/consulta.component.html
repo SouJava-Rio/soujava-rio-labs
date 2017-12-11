@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+      <h2>{{titulo}}</h2>
+<table class="table table-bordered table-hover">
+   <thead>
+   <tr>
+       <th>Código</th>
+       <th>JUG</th>
+       <th>leader</th>
+       <th>email</th>
+       <th>descricao</th>
+       <th>Editar</th>
+       <th>Excluir</th>
+   </tr>
+   </thead>
+   <tbody>
+       <tr *ngFor="let jug of jugs; let i = index;">
+       <td>{{ jug.id }}</td>
+       <td>{{ jug.nome }}</td>
+       <td>{{ jug.leader }}</td>
+       <td>{{ jug.email }}</td>
+       <td>{{ jug.descricao }}</td>
+       <td><a (click)="editar(jug.id);" class="btn btn-info btn-md"><span class="glyphicon glyphicon-pencil"></span></a></td>
+       <td><a (click)="excluir(jug.id, i);" class="btn btn-danger btn-md"><span class="glyphicon glyphicon-trash"></span></a></td>
+       </tr>
+       <tr>
+          <td colspan="6" style="text-align: right;">Total de Registros: {{ jugs.length }}</td>
+       </tr>
+   </tbody>
+</table>
+</div>
+</div>
