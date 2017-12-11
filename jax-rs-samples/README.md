@@ -6,7 +6,7 @@ Aqui estão contribuições de soluções utilizando JAX-RS + outros recursos + 
 
 Projeto         | Descrição
 --------------- | -------------
-[jax-rs-sample-cdi-deltaspike-data](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/jax-rs-samples/jax-rs-sample-cdi-deltaspike-data) | Projeto utilizando JAX-RS(RestEasy) + CDI + AngularJS + [DeltaSpike Data](https://deltaspike.apache.org/documentation/data.html)
+[jax-rs-sample-cdi-deltaspike-data](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/jax-rs-samples/Jax-rs-deltaspike-angular2-4) | Projeto utilizando JAX-RS(RestEasy) + CDI + Angular 2/4 + [DeltaSpike Data](https://deltaspike.apache.org/documentation/data.html)
 
 
 ## Links informativos
