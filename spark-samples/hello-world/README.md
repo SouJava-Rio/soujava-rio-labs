@@ -13,7 +13,7 @@ mvn clean package
 
 java -jar SparkJava-sample.jar dentro da pasta target/
 
-depoois -> http://localhost:8080/hello
+depois -> http://localhost:8080/hello
 
 # Docker
 
