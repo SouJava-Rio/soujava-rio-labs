@@ -7,6 +7,10 @@ Projeto utilizado para exemplificar a utilização do SparkJava
 * SparkJava 2.7.1
 * Docker
 * Angular
+* CDI
+* DeltaSpike
+* H2 DataBase
+* Json-B
 
 ## Executando o projeto
 
