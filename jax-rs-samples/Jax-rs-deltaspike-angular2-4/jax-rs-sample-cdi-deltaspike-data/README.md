@@ -15,5 +15,7 @@ Projeto utilizado para exemplificar a utilização de JAX-RS, CDI,DatelSpike Dat
 
 mvn clean package e adicinar o War na pasta webapps do tomcat ou importa o projeto para sua IDE.
 
-front-angular -> creditos -> http://www.ciceroednilson.com.br/desenvolvendo-uma-aplicacao-web-com-angular-4-e-spring-boot-parte-1-introducao/
+front-angular -> app-jug -> ng serve -open
+
+creditos -> http://www.ciceroednilson.com.br/desenvolvendo-uma-aplicacao-web-com-angular-4-e-spring-boot-parte-1-introducao/
 
