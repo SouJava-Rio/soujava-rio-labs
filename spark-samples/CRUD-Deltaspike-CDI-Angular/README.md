@@ -14,7 +14,9 @@ mvn clean package
 
 java -jar SparkJava-sample.jar dentro da pasta target/
 
-depoois -> http://localhost:8080/hello
+# Front-End
+
+dentro da pasta app-jug -> ng serve -open
 
 # Docker
 
@@ -28,7 +30,7 @@ logo depois :http://localhost:8080/hello
 
 ## executar
 
-sudo docker run --name demo sparkJava-demo
+sudo docker run --name demo -p 8080:8080 sparkJava-demo
 
 ## Para e remover o Container
 
