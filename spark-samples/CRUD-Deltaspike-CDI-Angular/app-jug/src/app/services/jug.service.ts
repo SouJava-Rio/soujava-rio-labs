@@ -12,6 +12,7 @@ import { Observable } from 'rxjs/Rx';
 import {JUG} from '../services/jug';
 import {ConfigService} from './config.service';
 
+
 @Injectable()
 export class JUGService {
 

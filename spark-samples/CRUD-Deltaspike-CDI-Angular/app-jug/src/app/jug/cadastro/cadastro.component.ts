@@ -10,6 +10,8 @@ import {Response} from '../../services/response';
 
 import { Observable } from 'rxjs/Observable';
 
+import swal from 'sweetalert2';
+
 @Component({
    selector: 'app-cadastro-pessoa',
    templateUrl: './cadastro.component.html',
@@ -63,20 +65,32 @@ import { Observable } from 'rxjs/Observable';
           /*SE RETORNOU 1 DEVEMOS MOSTRAR A MENSAGEM DE SUCESSO
           // E LIMPAR O FORMULÁRIO PARA INSERIR UM NOVO REGISTRO*/
           if (res.codigo == 1) {
-           alert(res.mensagem);
+            swal(
+              res.mensagem,
+              '',
+              'success'
+            ) ;
            this.jug = new JUG();
            this.router.navigate(['/consulta-jug']);
           } else {
             /*
             ESSA MENSAGEM VAI SER MOSTRADA CASO OCORRA ALGUMA EXCEPTION
             NO SERVIDOR (CODIGO = 0)*/
-            alert(res.mensagem);
+            swal(
+              res.mensagem,
+              '',
+              'error'
+            ) ;
           }
         },
         (erro) => {
           /**AQUI VAMOS MOSTRAR OS ERROS NÃO TRATADOS
             EXEMPLO: SE APLICAÇÃO NÃO CONSEGUIR FAZER UMA REQUEST NA API                        */
-           alert(erro);
+            swal(
+              erro,
+              '',
+              'error'
+            ) ;
         });
 
      } else {
@@ -90,18 +104,30 @@ import { Observable } from 'rxjs/Observable';
         /*SE RETORNOU 1 DEVEMOS MOSTRAR A MENSAGEM DE SUCESSO
           E REDIRECIONAR O USUÁRIO PARA A PÁGINA DE CONSULTA*/
        if ( res.codigo == 1 ) {
-         alert(res.mensagem);
+        swal(
+          res.mensagem,
+          '',
+          'success'
+        ) ;
          this.router.navigate(['/consulta-jug']);
        } else {
          /*ESSA MENSAGEM VAI SER MOSTRADA CASO OCORRA ALGUMA EXCEPTION
          NO SERVIDOR (CODIGO = 0)*/
-          alert(res.mensagem);
+         swal(
+          res.mensagem,
+          '',
+          'error'
+        ) ;
         }
       },
       (erro) => {
         /**AQUI VAMOS MOSTRAR OS ERROS NÃO TRATADOS
          EXEMPLO: SE APLICAÇÃO NÃO CONSEGUIR FAZER UMA REQUEST NA API                        */
-         alert(erro);
+         swal(
+          erro,
+          '',
+          'error'
+        ) ;
       });
      }
 
