@@ -2,8 +2,6 @@
 
 Laboratório de projetos para pesquisa e ou aprendizado. O objetivo desse repositório é estimular a contribuição de conhecimento, experiências de pessoas que já trabalham com Java ou estão iniciando nas universidades ou mercado de trabalho.
 
-![duke-lab](https://i.pinimg.com/736x/da/ff/11/daff11f169d0921513b7f4f7ac1579fe--computer-programming-java.jpg)
-
 ## Exemplos de Projetos
 
 Exemplo         | Descrição
@@ -17,3 +15,6 @@ Exemplo         | Descrição
 [Exemplos de Spark](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/spark-samples) | Pasta de exemplos de Spark
 [Exemplos de MVC 1.0](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples) | Pasta de exemplos da MVC 1.0 (JSR-371)
 [Exemplos de FnProject - Serverless Platform ](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/fnProject-samples) | Pasta de exemplos do FnProject - Serverless Platform 
+
+
+![duke-lab](https://i.pinimg.com/736x/da/ff/11/daff11f169d0921513b7f4f7ac1579fe--computer-programming-java.jpg)
