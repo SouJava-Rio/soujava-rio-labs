@@ -1,7 +1,6 @@
 package br.org.soujava.rio.app;
 
 import java.util.Arrays;
-import java.util.List;
 
 import javax.json.bind.Jsonb;
 import javax.json.bind.JsonbBuilder;
@@ -24,11 +23,9 @@ public class Main {
 
 	System.out.println("Serializando a Classe");
 
-	List<String> leaders = Arrays.asList("Daniel Dias", "Paulo Simões", "Ulisses Telemaco");
-
 	JUG jug = JUG.builder()
 				 .nome("SouJava-Rio")
-				 .leaders(leaders)
+				 .leaders(Arrays.asList("Daniel Dias", "Paulo Simões", "Ulisses Telemaco"))
 				 .descricao("Comunidade Java do Rio")
 				 .localidade(new Localidade("RJ", "Brasil"))
 				 .build();
