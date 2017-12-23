@@ -1,4 +1,4 @@
-# JSF 2.4
+# JSF 2.3
 Projeto utilizado para exemplificar a utilização da JSF 2.3
 
 A Fazer ....
