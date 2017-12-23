@@ -2,7 +2,7 @@
 
 Laboratório de projetos para pesquisa e ou aprendizado. O objetivo desse repositório é estimular a contribuição de conhecimento, experiências de pessoas que já trabalham com Java ou estão iniciando nas universidades ou mercado de trabalho.
 
-![duke-lab](http://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/f4a5b21d-66fa-4885-92bf-c4e81c06d916/Image/c5a6d77891741a3a7ae4fe24e96a1fc4/duke14.jpg)
+![duke-lab](https://i.pinimg.com/736x/da/ff/11/daff11f169d0921513b7f4f7ac1579fe--computer-programming-java.jpg)
 
 ## Exemplos de Projetos
 
