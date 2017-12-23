@@ -15,6 +15,7 @@
 # Maven
 target/
 /node_modules
+package-lock.json
 
 # IntelliJ project files
 *.iml
