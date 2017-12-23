@@ -9,7 +9,7 @@ Projeto         | Descrição
 
 ## Links informativos
 
-* MVC-SPEC [MVC-SPEC](mvc-spec.org)
+* MVC-SPEC [MVC-SPEC](https://www.mvc-spec.org/)
 * JSR-371-JCP [JCP-371](https://jcp.org/en/jsr/detail?id=371)
 * Eclipse Ozark-RI[Eclipse-Ozark-proposals](https://projects.eclipse.org/proposals/eclipse-ozark)
 * github-MVC-SPEC [github-MVC-SPEC]( https://github.com/mvc-spec/)
