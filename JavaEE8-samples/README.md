@@ -8,6 +8,8 @@ Projeto         | Descrição
 --------------- | -------------
 [Servlet 4](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/JavaEE8-samples/Servlet4) | Projeto utilizando o ServerPush/HTTP2 do Servlet 4
 [Json-B](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/JavaEE8-samples/Json-B) | Projeto utilizando JSON-B
+[Security/Soteria](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/JavaEE8-samples/security) | Projeto utilizando Security/Soteria
+[JSF-2.3](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/JavaEE8-samples/jsf) | Projeto utilizando JSF 2.3
 
 
 ## Links informativos
