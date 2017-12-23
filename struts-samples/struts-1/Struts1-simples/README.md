@@ -13,7 +13,7 @@ mvn clean install payara-micro:bundle - para gerar o uber-Jar
 
 mvn  payara-micro:start - para executar o app
 
-ou java -jar Struts1-simples-microbundle.jar.jar dentro da pasta target/
+ou java -jar Struts1-simples-microbundle.jar dentro da pasta target/
 
 URL -> http://locahost:8080/Struts-1-simples-0.0.1-SNAPSHOT
 
