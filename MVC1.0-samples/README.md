@@ -6,7 +6,7 @@ Projeto         | Descrição
 --------------- | -------------
 [MVC-Hello-World](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/MVC-HelloWorld) | Simples Hello-World com Payara ou Wildfly . 
 [MVC-FORM](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/MVC-FORM) | Simples Formulario com Payara ou Wildfly . 
-
+[TomCat-TomEE-MVC-RestEasy](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/TomCat-TomEE-MVC) | Simples exemplo com Tomcat e Tomee usando o modulo Ozark-RestEasy .
 ## Links informativos
 
 * MVC-SPEC [MVC-SPEC](https://www.mvc-spec.org/)

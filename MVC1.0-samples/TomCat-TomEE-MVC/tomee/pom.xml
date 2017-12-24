@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>mvc.tomee</groupId>
+	<artifactId>tomee</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax.mvc</groupId>
+			<artifactId>javax.mvc-api</artifactId>
+			<version>1.0-pr</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mvc-spec.ozark</groupId>
+			<artifactId>ozark-core</artifactId>
+			<version>1.0.0-m03</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mvc-spec.ozark</groupId>
+			<artifactId>ozark-resteasy</artifactId>
+			<version>1.0.0-m03</version>
+		</dependency>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-web-api</artifactId>
+			<version>7.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-cdi</artifactId>
+			<version>3.1.4.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-servlet-initializer</artifactId>
+			<version> 3.1.4.Final</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>tomee-mvc</finalName>
+	</build>
+</project>
