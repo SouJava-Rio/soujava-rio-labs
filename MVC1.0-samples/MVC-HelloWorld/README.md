@@ -17,7 +17,7 @@ ou java -jar *.jar dentro da pasta target/
 
 * Wildfly-Swarm
 
-mvn clean package  - para gerar o uber-Jar
+mvn clean package -P wildfly - para gerar o uber-Jar
 
 java -jar *.jar dentro da pasta target/
 
