@@ -4,7 +4,7 @@ Aqui estão contribuições de projetos que usam a spec MVC 1.0 - JSR 371
 ## Projetos
 Projeto         | Descrição
 --------------- | -------------
-[]() | 
+[MVC-Hello-World](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/MVC-HelloWorld) | Simples Hello-World com Payara ou Wildfly . 
 []() |
 
 ## Links informativos
