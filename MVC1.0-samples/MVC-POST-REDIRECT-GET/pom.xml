@@ -1,0 +1,142 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>br.org.soujava.rio</groupId>
+  <artifactId>MVC-POST-REDIRECT-GET</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>MVC-POST-REDIRECT-GET</name>
+  <url>http://maven.apache.org</url>
+
+  	<organization>
+		<name>SouJava { Rio }</name>
+		<url>http://soujava-rio.github.io</url>
+	</organization>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+		<version.payara>1.0.0</version.payara>
+		<version.swarm>2017.12.1</version.swarm>
+	</properties>
+
+	<developers>
+		<developer>
+			<name>Daniel Dias</name>
+			<email>daniel.dias@soujava.org.br</email>
+			<organization>SouJava { Rio }</organization>
+		</developer>
+	</developers>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.wildfly.swarm</groupId>
+				<artifactId>bom-all</artifactId>
+				<version>${version.swarm}</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax.mvc</groupId>
+			<artifactId>javax.mvc-api</artifactId>
+			<version>1.0-pr</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mvc-spec.ozark</groupId>
+			<artifactId>ozark-core</artifactId>
+			<version>1.0.0-m03</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.microprofile</groupId>
+			<artifactId>microprofile</artifactId>
+			<version>1.2</version>
+			<type>pom</type>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.14</version>
+			<scope>provided</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<finalName>MVC-Post-Redirect-Get</finalName>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>payara</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>fish.payara.maven.plugins</groupId>
+						<artifactId>payara-micro-maven-plugin</artifactId>
+						<version>${version.payara}</version>
+						<executions>
+							<execution>
+								<goals>
+									<goal>bundle</goal>
+									<goal>start</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<useUberJar>true</useUberJar>
+							<deployWar>false</deployWar>
+							<daemon>false</daemon>
+							<payaraVersion>5.Beta1</payaraVersion>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+			<dependencies>
+				<dependency>
+					<groupId>org.mvc-spec.ozark</groupId>
+					<artifactId>ozark-jersey</artifactId>
+					<version>1.0.0-m03</version>
+				</dependency>
+			</dependencies>
+		</profile>
+
+		<profile>
+			<id>wildfly</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.wildfly.swarm</groupId>
+						<artifactId>wildfly-swarm-plugin</artifactId>
+						<version>${version.swarm}</version>
+						<executions>
+							<execution>
+								<goals>
+									<goal>package</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+			<dependencies>
+				<dependency>
+					<groupId>org.mvc-spec.ozark</groupId>
+					<artifactId>ozark-resteasy</artifactId>
+					<version>1.0.0-m03</version>
+				</dependency>
+			</dependencies>
+		</profile>
+	</profiles>
+</project>

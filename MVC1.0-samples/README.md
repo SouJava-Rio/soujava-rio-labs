@@ -5,7 +5,8 @@ Aqui estão contribuições de projetos que usam a spec MVC 1.0 - JSR 371
 Projeto         | Descrição
 --------------- | -------------
 [MVC-Hello-World](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/MVC-HelloWorld) | Simples Hello-World com Payara ou Wildfly . 
-[MVC-FORM](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/MVC-FORM) | Simples Formulario com Payara ou Wildfly . 
+[MVC-FORM](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/MVC-FORM) | Simples Formulario com Payara ou Wildfly .
+[MVC-POST-REDIRECT-GET](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/MVC-POST-REDIRECT-GET) | Exemplo de redirecinamento.
 [TomCat-TomEE-MVC-RestEasy](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/TomCat-TomEE-MVC) | Simples exemplo com Tomcat e Tomee usando o modulo Ozark-RestEasy .
 ## Links informativos
 
