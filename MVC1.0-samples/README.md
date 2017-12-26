@@ -8,6 +8,8 @@ Projeto         | Descrição
 [MVC-FORM](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/MVC-FORM) | Simples Formulario com Payara ou Wildfly .
 [MVC-POST-REDIRECT-GET](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/MVC-POST-REDIRECT-GET) | Exemplo de redirecinamento.
 [MVC-Validacao](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/MVC-Validacao) | Exemplo de Validação
+[MVC-TiposRetornos](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/MVC-TiposRetornos) | Exemplos com Void, String, Response e Viewable.
+[MVC-TemplateEngine](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/MVC-TemplateEngine) | Exemplos de uso de Variados Template Engine (JSP,FACELETS,Velocity, etc) .
 [TomCat-TomEE-MVC-RestEasy](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/TomCat-TomEE-MVC) | Simples exemplo com Tomcat e Tomee usando o modulo Ozark-RestEasy .
 ## Links informativos
 
