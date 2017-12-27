@@ -113,4 +113,11 @@ public class TemplateEngineController {
 	public void getFreemarker() {
 		this.models.put("freemarker", "Freemarker");
 	}
+
+	@GET
+	@Path("asciidoc")
+	@View("resultado.adoc")
+	public void getAsciiDoc() {
+		this.models.put("adoc", "adoc - engine");
+	}
 }

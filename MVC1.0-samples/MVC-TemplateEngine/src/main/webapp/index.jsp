@@ -17,5 +17,6 @@
 	<a href="app/template/jade">Jade</a> <br>
 	<a href="app/template/handlebars">Handlebars</a> <br>
 	<a href="app/template/freemarker">Freemarker</a> <br>
+	<a href="app/template/asciidoc">AsciiDoc</a> <br>
 </body>
 </html>
