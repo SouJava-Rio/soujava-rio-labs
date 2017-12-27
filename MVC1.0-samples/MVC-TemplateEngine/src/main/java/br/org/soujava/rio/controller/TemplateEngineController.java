@@ -62,4 +62,11 @@ public class TemplateEngineController {
 	public void getJetbrick() {
 		this.models.put("jetbrick", "jetbrick");
 	}
+
+	@GET
+	@Path("pebble")
+	@View("resultado.peb")
+	public void getPebble() {
+		this.models.put("pebble", "pebble");
+	}
 }
