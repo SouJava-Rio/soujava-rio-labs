@@ -15,5 +15,6 @@
 	<a href="app/template/velocity">Velocity</a> <br>
 	<a href="app/template/mustache">Mustache</a> <br>
 	<a href="app/template/jade">Jade</a> <br>
+	<a href="app/template/handlebars">Handlebars</a> <br>
 </body>
 </html>

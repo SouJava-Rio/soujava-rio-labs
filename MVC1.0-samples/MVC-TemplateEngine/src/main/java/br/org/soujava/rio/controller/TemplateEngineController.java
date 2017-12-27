@@ -99,4 +99,11 @@ public class TemplateEngineController {
 		this.models.put("titulo", "MVC-Template Engine");
 		this.models.put("jade", "Jade");
 	}
+
+	@GET
+	@Path("handlebars")
+	@View("resultado.hbs")
+	public void getHandlebars() {
+		this.models.put("handlebars", "Handlebars");
+	}
 }
