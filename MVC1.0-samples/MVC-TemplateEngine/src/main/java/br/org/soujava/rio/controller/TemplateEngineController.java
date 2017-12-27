@@ -69,4 +69,11 @@ public class TemplateEngineController {
 	public void getPebble() {
 		this.models.put("pebble", "pebble");
 	}
+
+	@GET
+	@Path("thymeleaf")
+	@View("resultado.html")
+	public void getThymeleaf() {
+		this.models.put("thymeleaf", "thymeleaf");
+	}
 }

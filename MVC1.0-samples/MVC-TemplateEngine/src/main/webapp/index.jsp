@@ -11,5 +11,6 @@
 	<a href="app/template/facelets">FACELETS- Default</a> <br>
 	<a href="app/template/jetbrick">Jetbrick</a> <br>
 	<a href="app/template/pebble">Pebble</a> <br>
+	<a href="app/template/thymeleaf">Thymeleaf</a> <br>
 </body>
 </html>
