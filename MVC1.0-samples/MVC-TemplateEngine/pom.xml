@@ -176,32 +176,5 @@
 				</dependency>
 			</dependencies>
 		</profile>
-
-		<profile>
-			<id>wildfly</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.wildfly.swarm</groupId>
-						<artifactId>wildfly-swarm-plugin</artifactId>
-						<version>${version.swarm}</version>
-						<executions>
-							<execution>
-								<goals>
-									<goal>package</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-			<dependencies>
-				<dependency>
-					<groupId>org.mvc-spec.ozark</groupId>
-					<artifactId>ozark-resteasy</artifactId>
-					<version>1.0.0-m03</version>
-				</dependency>
-			</dependencies>
-		</profile>
 	</profiles>
 </project>

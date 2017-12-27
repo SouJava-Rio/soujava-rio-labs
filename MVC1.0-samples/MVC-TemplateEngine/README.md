@@ -16,14 +16,6 @@ mvn clean install -P payara payara-micro:bundle && mvn -P payara payara-micro:st
 
 ou java -jar *.jar dentro da pasta target/
 
-* Wildfly-Swarm
-
-mvn clean package -P wildfly - para gerar o uber-Jar
-
-java -jar *.jar dentro da pasta target/
-
-URL -> http://localhost:8080/
-
 # Docker
 
 No local do Dockerfile executar :
