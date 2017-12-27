@@ -106,4 +106,11 @@ public class TemplateEngineController {
 	public void getHandlebars() {
 		this.models.put("handlebars", "Handlebars");
 	}
+
+	@GET
+	@Path("freemarker")
+	@View("resultado.ftl")
+	public void getFreemarker() {
+		this.models.put("freemarker", "Freemarker");
+	}
 }

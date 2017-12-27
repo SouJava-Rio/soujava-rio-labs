@@ -16,5 +16,6 @@
 	<a href="app/template/mustache">Mustache</a> <br>
 	<a href="app/template/jade">Jade</a> <br>
 	<a href="app/template/handlebars">Handlebars</a> <br>
+	<a href="app/template/freemarker">Freemarker</a> <br>
 </body>
 </html>

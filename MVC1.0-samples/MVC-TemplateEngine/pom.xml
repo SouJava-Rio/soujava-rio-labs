@@ -119,6 +119,12 @@
             <version>1.0.0-m03</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.mvc-spec.ozark.ext</groupId>
+            <artifactId>ozark-freemarker</artifactId>
+            <version>1.0.0-m03</version>
+        </dependency>
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
