@@ -81,7 +81,14 @@ public class TemplateEngineController {
 	@GET
 	@Path("velocity")
 	@View("resultado.vm")
-	public void hello() {
+	public void getVelocity() {
 		this.models.put("velocity", "Velocity");
+	}
+
+	@GET
+	@Path("mustache")
+	@View("resultado.mustache")
+	public void getMustache() {
+		this.models.put("mustache", "Mustache");
 	}
 }
