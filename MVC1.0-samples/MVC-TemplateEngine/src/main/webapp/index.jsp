@@ -9,5 +9,6 @@
 <body>
 	<a href="app/template/jsp">JSP - Default</a> <br>
 	<a href="app/template/facelets">FACELETS- Default</a> <br>
+	<a href="app/template/jetbrick">Jetbrick</a> <br>
 </body>
 </html>

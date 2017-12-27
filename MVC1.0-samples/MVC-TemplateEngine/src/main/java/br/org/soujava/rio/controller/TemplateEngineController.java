@@ -55,4 +55,11 @@ public class TemplateEngineController {
 	public void getFacelets() {
 		this.models.put("jsf", "Facelets - Default");
 	}
+
+	@GET
+	@Path("jetbrick")
+	@View("resultado.jetx")
+	public void getJetbrick() {
+		this.models.put("jetbrick", "jetbrick");
+	}
 }

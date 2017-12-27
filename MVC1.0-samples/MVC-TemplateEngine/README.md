@@ -7,7 +7,7 @@
 * Docker
 * Wildfly-Swarm
 * Payara-Micro
-* JSP, Facelest, Velocity, etc...
+* JSP, Facelet, Velocity, etc...
 
 ## Executando o projeto
 

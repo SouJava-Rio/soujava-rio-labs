@@ -63,7 +63,7 @@
 			<type>pom</type>
 			<scope>provided</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.glassfish</groupId>
 			<artifactId>javax.faces</artifactId>
@@ -74,6 +74,12 @@
 			<groupId>javax.faces</groupId>
 			<artifactId>javax.faces-api</artifactId>
 			<version>2.2</version>
+		</dependency>
+		<!-- Template Engine -->
+		<dependency>
+			<groupId>org.mvc-spec.ozark.ext</groupId>
+			<artifactId>ozark-jetbrick</artifactId>
+			<version>1.0.0-m03</version>
 		</dependency>
 
 		<dependency>
