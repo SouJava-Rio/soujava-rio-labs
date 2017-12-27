@@ -63,6 +63,18 @@
 			<type>pom</type>
 			<scope>provided</scope>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.faces</artifactId>
+			<version>2.2.14</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.faces</groupId>
+			<artifactId>javax.faces-api</artifactId>
+			<version>2.2</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>

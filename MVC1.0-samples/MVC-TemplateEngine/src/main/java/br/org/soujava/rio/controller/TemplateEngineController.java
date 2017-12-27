@@ -22,7 +22,11 @@
  */
 package br.org.soujava.rio.controller;
 
+import javax.inject.Inject;
+import javax.mvc.Models;
 import javax.mvc.annotation.Controller;
+import javax.mvc.annotation.View;
+import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
 /**
@@ -35,4 +39,20 @@ import javax.ws.rs.Path;
 @Path("template")
 public class TemplateEngineController {
 
+	@Inject
+	private Models models;
+	
+	@GET
+	@Path("jsp")
+	@View("resultado.jsp")
+	public void getJSP() {
+		this.models.put("jsp", "JSP - Default");
+	}
+
+	@GET
+	@Path("facelets")
+	@View("resultado.xhtml")
+	public void getFacelets() {
+		this.models.put("jsf", "Facelets - Default");
+	}
 }
