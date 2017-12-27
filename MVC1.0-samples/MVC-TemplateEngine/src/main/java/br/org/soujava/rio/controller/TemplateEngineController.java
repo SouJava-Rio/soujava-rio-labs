@@ -28,6 +28,7 @@ import javax.mvc.annotation.Controller;
 import javax.mvc.annotation.View;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 
 /**
  * @author Daniel Dias
@@ -75,5 +76,12 @@ public class TemplateEngineController {
 	@View("resultado.html")
 	public void getThymeleaf() {
 		this.models.put("thymeleaf", "thymeleaf");
+	}
+
+	@GET
+	@Path("velocity")
+	@View("resultado.vm")
+	public void hello() {
+		this.models.put("velocity", "Velocity");
 	}
 }

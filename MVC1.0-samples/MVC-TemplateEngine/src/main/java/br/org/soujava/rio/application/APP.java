@@ -22,8 +22,13 @@
  */
 package br.org.soujava.rio.application;
 
+import java.util.Collections;
+import java.util.Set;
+
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
+
+import br.org.soujava.rio.controller.TemplateEngineController;
 
 /**
  * @author Daniel Dias
@@ -32,4 +37,10 @@ import javax.ws.rs.core.Application;
  * twitter:@danieldiasjava
  */
 @ApplicationPath("app")
-public class APP extends Application {}
+public class APP extends Application {
+
+	@Override
+    public Set<Class<?>> getClasses() {
+        return Collections.singleton(TemplateEngineController.class);
+    }
+}

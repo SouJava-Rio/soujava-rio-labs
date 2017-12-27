@@ -82,18 +82,24 @@
 			<artifactId>ozark-jetbrick</artifactId>
 			<version>1.0.0-m03</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.mvc-spec.ozark.ext</groupId>
 			<artifactId>ozark-pebble</artifactId>
 			<version>1.0.0-m03</version>
 		</dependency>
-		
-		 <dependency>
-            <groupId>org.mvc-spec.ozark.ext</groupId>
-            <artifactId>ozark-thymeleaf</artifactId>
-            <version>1.0.0-m03</version>
-        </dependency>
+
+		<dependency>
+			<groupId>org.mvc-spec.ozark.ext</groupId>
+			<artifactId>ozark-thymeleaf</artifactId>
+			<version>1.0.0-m03</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mvc-spec.ozark.ext</groupId>
+			<artifactId>ozark-velocity</artifactId>
+			<version>1.0.0-m03</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>

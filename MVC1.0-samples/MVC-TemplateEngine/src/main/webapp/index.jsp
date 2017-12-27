@@ -12,5 +12,6 @@
 	<a href="app/template/jetbrick">Jetbrick</a> <br>
 	<a href="app/template/pebble">Pebble</a> <br>
 	<a href="app/template/thymeleaf">Thymeleaf</a> <br>
+	<a href="app/template/velocity">Velocity</a> <br>
 </body>
 </html>
