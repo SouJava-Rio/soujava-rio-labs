@@ -106,6 +106,12 @@
 			<artifactId>ozark-mustache</artifactId>
 			<version>1.0.0-m03</version>
 		</dependency>
+		
+		<dependency>
+            <groupId>org.mvc-spec.ozark.ext</groupId>
+            <artifactId>ozark-jade</artifactId>
+            <version>1.0.0-m03</version>
+        </dependency>
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>

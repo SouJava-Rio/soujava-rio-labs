@@ -14,5 +14,6 @@
 	<a href="app/template/thymeleaf">Thymeleaf</a> <br>
 	<a href="app/template/velocity">Velocity</a> <br>
 	<a href="app/template/mustache">Mustache</a> <br>
+	<a href="app/template/jade">Jade</a> <br>
 </body>
 </html>

@@ -91,4 +91,12 @@ public class TemplateEngineController {
 	public void getMustache() {
 		this.models.put("mustache", "Mustache");
 	}
+
+	@GET
+	@Path("jade")
+	@View("resultado.jade")
+	public void getJade() {
+		this.models.put("titulo", "MVC-Template Engine");
+		this.models.put("jade", "Jade");
+	}
 }
