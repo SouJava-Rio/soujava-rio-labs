@@ -10,6 +10,7 @@ Projeto         | Descrição
 [Json-B](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/JavaEE8-samples/Json-B) | Projeto utilizando JSON-B
 [Security/Soteria](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/JavaEE8-samples/security) | Projeto utilizando Security/Soteria
 [JSF-2.3](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/JavaEE8-samples/jsf) | Projeto utilizando JSF 2.3
+[JPA-2.2](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/JavaEE8-samples/jpa2.2) | Projeto utilizando JPA 2.2
 
 
 ## Links informativos
