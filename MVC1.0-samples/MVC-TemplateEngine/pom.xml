@@ -163,7 +163,7 @@
 							<useUberJar>true</useUberJar>
 							<deployWar>false</deployWar>
 							<daemon>false</daemon>
-							<payaraVersion>5.Beta1</payaraVersion>
+							<payaraVersion>5.Beta2</payaraVersion>
 						</configuration>
 					</plugin>
 				</plugins>
