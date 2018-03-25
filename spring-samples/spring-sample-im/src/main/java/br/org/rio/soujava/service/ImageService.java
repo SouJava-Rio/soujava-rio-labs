@@ -6,6 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.time.LocalDateTime;
 
 import javax.annotation.PostConstruct;
 
@@ -58,21 +59,34 @@ public class ImageService {
     }
        
 	public void saveImage(MultipartFile file){
+		
 	      String filename = StringUtils.cleanPath(file.getOriginalFilename());
+	      
 	        try {
+	        	
 	            if (file.isEmpty()) {
 	                throw new StorageException("Failed to store empty file " + filename);
 	            }
+	            
 	            if (filename.contains("..")) {
 	                // This is a security check
 	                throw new StorageException(
 	                        "Cannot store file with relative path outside current directory "
 	                                + filename);
 	            }
-	            Files.copy(file.getInputStream(), this.rootLocation.resolve(filename),
+
+	            final Image image = Image.builder()
+				        		.title(filename)
+				        		.orderNumber(0)
+				        		.created(LocalDateTime.now())
+				        		.build();
+	            
+	            imageRepository.save(image);
+	            
+	            Files.copy(file.getInputStream(), this.rootLocation.resolve(image.getId().toString()),
 	                    StandardCopyOption.REPLACE_EXISTING);
-	        }
-	        catch (IOException e) {
+	            
+	        }catch (IOException e) {
 	            throw new StorageException("Failed to store file " + filename, e);
 	        }
 	}

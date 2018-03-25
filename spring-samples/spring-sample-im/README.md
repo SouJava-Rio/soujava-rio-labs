@@ -19,3 +19,8 @@ http://localhost:8080/images
 ## Acesso ao H2 console
 
 http://localhost:8080/console
+
+## Pastas
+
+ `db/`: Pasta onde será armazenado o banco de dados em arquivo
+ `images/`: Pasta onde ficará as imagens, cujo nome será o id do registro gerado na tabela 'IMAGES'.
