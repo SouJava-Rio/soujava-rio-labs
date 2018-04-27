@@ -7,6 +7,7 @@ Laboratório de projetos para pesquisa e ou aprendizado. O objetivo desse reposi
 Exemplo         | Descrição
 --------------- | -------------
 [Exemplos de Java 9 ](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/java9-samples) | Pasta de exemplos diversos de projetos utilizando Java 9
+[Exemplos de Java 10 ](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/java10-samples) | Pasta de exemplos diversos de projetos utilizando Java 10
 [Exemplos de JSF](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/jsf-samples) | Pasta de exemplos diversos de projetos utilizando JSF
 [Exemplos de JAX-RS](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/jax-rs-samples) | Pasta de exemplos diversos de projetos utilizando JAX-RS
 [Exemplos de Java EE 8](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/JavaEE8-samples) | Pasta de exemplos de Java EE 8
