@@ -97,7 +97,7 @@
 							<useUberJar>true</useUberJar>
 							<deployWar>false</deployWar>
 							<daemon>false</daemon>
-							<payaraVersion>5.Beta2</payaraVersion>
+							<payaraVersion>5.181</payaraVersion>
 						</configuration>
 					</plugin>
 				</plugins>
