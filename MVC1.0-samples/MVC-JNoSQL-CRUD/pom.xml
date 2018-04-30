@@ -1,0 +1,99 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+				http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.danieldias</groupId>
+	<artifactId>MVC1.0.Ozark</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>MVC1.0.Ozark Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-web-api</artifactId>
+			<version>8.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Mongo Driver -->
+		<dependency>
+			<groupId>org.jnosql.artemis</groupId>
+			<artifactId>artemis-document</artifactId>
+			<version>${jnosql.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jnosql.diana</groupId>
+			<artifactId>mongodb-driver</artifactId>
+			<version>${jnosql.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mvc-spec.ozark</groupId>
+			<artifactId>ozark-core</artifactId>
+			<version>${ozark.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mvc-spec.ozark</groupId>
+			<artifactId>ozark-jersey</artifactId>
+			<version>${ozark.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>MVC1.0.Ozark</finalName>
+		<plugins>
+			<plugin>
+				<groupId>fish.payara.maven.plugins</groupId>
+				<artifactId>payara-micro-maven-plugin</artifactId>
+				<version>${version.payara}</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>bundle</goal>
+							<goal>start</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<useUberJar>true</useUberJar>
+					<deployWar>false</deployWar>
+					<daemon>false</daemon>
+					<payaraVersion>5.181</payaraVersion>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+		<jnosql.version>0.0.4-SNAPSHOT</jnosql.version>
+		<ozark.version>1.0.0-m04-SNAPSHOT</ozark.version>
+		<version.payara>1.0.0</version.payara>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>snapshots-repo</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+</project>

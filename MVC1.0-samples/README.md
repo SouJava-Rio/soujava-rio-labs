@@ -11,9 +11,11 @@ Projeto         | Descrição
 [MVC-TiposRetornos](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/MVC-TiposRetornos) | Exemplos com Void, String, Response e Viewable.
 [MVC-TemplateEngine](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/MVC-TemplateEngine) | Exemplos de uso de Variados Template Engine (JSP,FACELETS,Velocity, etc) .
 [TomCat-TomEE-MVC-RestEasy](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/TomCat-TomEE-MVC) | Simples exemplo com Tomcat e Tomee usando o modulo Ozark-RestEasy .
+[MVC-JNoSQL-CRUD](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples/MVC-JNoSQL-CRUD) | CRUD COm MVC 1.0 com Eclipse JNoSQL + Payara-Micro
 ## Links informativos
 
 * MVC-SPEC [MVC-SPEC](https://www.mvc-spec.org/)
 * JSR-371-JCP [JCP-371](https://jcp.org/en/jsr/detail?id=371)
 * Eclipse Ozark-RI[Eclipse-Ozark-proposals](https://projects.eclipse.org/proposals/eclipse-ozark)
 * github-MVC-SPEC [github-MVC-SPEC]( https://github.com/mvc-spec/)
+* Eclipse JNoSQL [JNoSQL](http://www.jnosql.org/)
