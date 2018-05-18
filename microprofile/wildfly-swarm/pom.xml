@@ -31,7 +31,7 @@
 			<dependency>
 				<groupId>org.wildfly.swarm</groupId>
 				<artifactId>bom-all</artifactId>
-				<version>2017.11.0</version>
+				<version>2018.5.0</version>
 				<scope>import</scope>
 				<type>pom</type>
 			</dependency>
@@ -50,12 +50,6 @@
 			<groupId>org.wildfly.swarm</groupId>
 			<artifactId>microprofile</artifactId>
 		</dependency>
-
-		<dependency>
-			<groupId>org.wildfly.swarm</groupId>
-			<artifactId>microprofile-config</artifactId>
-			<version>1.1.2</version>
-		</dependency>
 	</dependencies>
 
 	<build>
@@ -64,7 +58,7 @@
 			<plugin>
 				<groupId>org.wildfly.swarm</groupId>
 				<artifactId>wildfly-swarm-plugin</artifactId>
-				<version>2017.11.0</version>
+				<version>2018.5.0</version>
 				<executions>
 					<execution>
 						<goals>
