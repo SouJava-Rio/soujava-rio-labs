@@ -13,13 +13,9 @@ Projeto utilizado para exemplificar a utilização de FDK-Java
 curl -LSs https://raw.githubusercontent.com/fnproject/cli/master/install | sh 
 ```
 
-### 2 - build 
-    ```bash 
-    fn build
-    ```
-### 3 - executando 
+### 2 - executando 
     ```bash
-    fn run
+    fn --verbose run
   ```
 
   ```json
