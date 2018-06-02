@@ -20,64 +20,43 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package br.org.soujava.rio.controller;
+package br.org.soujava.rio.model;
 
-import static java.util.stream.Collectors.toList;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
-import javax.inject.Inject;
-import javax.mvc.Models;
-import javax.mvc.annotation.Controller;
-import javax.mvc.annotation.View;
-import javax.mvc.binding.BindingResult;
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Named;
 import javax.mvc.binding.ValidationError;
-import javax.validation.Valid;
-import javax.validation.executable.ExecutableType;
-import javax.validation.executable.ValidateOnExecution;
-import javax.ws.rs.BeanParam;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
 
-import br.org.soujava.rio.model.Errors;
-import br.org.soujava.rio.model.JUG;
 /**
  * @author Daniel Dias
  * github:Daniel-Dos
  * daniel.dias@soujava.org.br
  * twitter:@danieldiasjava
  */
-@Controller
-@Path("validacao")
-public class ValidacaoController {
+@Named("error")
+@RequestScoped
+public class Errors {
 
-	@Inject
-	private Models models;
+	private List<ValidationError> errors = new ArrayList<>();
 
-	@Inject
-	private BindingResult bindingResult;
-	
-	@Inject
-	private Errors erros;
+    public void setErrors(List<ValidationError> messages) {
+        this.errors = messages;
+    }
 
-	@POST
-	@Path("validar")
-	@ValidateOnExecution(type = ExecutableType.NONE)
-	public String registrar(@Valid @BeanParam JUG jug) {
-		if( bindingResult.isFailed()) {
-			
-			this.getErrors();
-			return "form.jsp";
-	}
-		models.put("jug", jug);
-		return "mensagem.jsp";
-	}
+    public String getErrors() {
+        return errors.stream()
+	                 .map(ValidationError::getMessage)
+	                 .collect(Collectors.joining("<br>"));
+    }
 
-	@GET
-	@View("form.jsp")
-	@Path("form")
-	public void getForm() {}
-	
-	private void getErrors() {
-		erros.setErrors(bindingResult.getAllValidationErrors().stream().collect(toList()));
-	}
+    public String getMessage(String param) {
+        return errors.stream()
+	                 .filter(v -> v.getParamName().equals(param))
+	                 .map(ValidationError::getMessage)
+	                 .findFirst()
+	                 .orElse("");
+    }
 }
