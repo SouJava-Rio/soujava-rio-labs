@@ -16,7 +16,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<weld.version>3.0.2.Final</weld.version>
+		<weld.version>3.0.4.Final</weld.version>
 		<deltaspike.version>1.8.0</deltaspike.version>
 	</properties>
 
@@ -32,7 +32,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.16.14</version>
+			<version>1.16.22</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -41,19 +41,9 @@
 			<version>2.7.1</version>
 		</dependency>
 		<dependency>
-			<groupId>javax.json.bind</groupId>
-			<artifactId>javax.json.bind-api</artifactId>
-			<version>1.0</version>
-		</dependency>
-		<dependency>
 			<groupId>org.eclipse</groupId>
 			<artifactId>yasson</artifactId>
 			<version>1.0.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.glassfish</groupId>
-			<artifactId>javax.json</artifactId>
-			<version>1.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -64,11 +54,6 @@
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<version>1.4.187</version>
-		</dependency>
-		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-			<version>2.3.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jboss.weld.se</groupId>
