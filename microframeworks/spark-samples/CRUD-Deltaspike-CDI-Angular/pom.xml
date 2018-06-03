@@ -1,10 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>br.com.soujava.rio</groupId>
-  <artifactId>CRUD-SPARK</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>CRUD-SPARK</name>
-  <description>CRUD-SPARK</description>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.soujava.rio</groupId>
+	<artifactId>CRUD-SPARK</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>CRUD-SPARK</name>
+	<description>CRUD-SPARK</description>
 
 	<organization>
 		<name>SouJava { Rio }</name>
@@ -17,7 +19,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<weld.version>3.0.4.Final</weld.version>
-		<deltaspike.version>1.8.0</deltaspike.version>
+		<deltaspike.version>1.8.1</deltaspike.version>
 	</properties>
 
 	<developers>
@@ -27,7 +29,7 @@
 			<organization>SouJava { Rio }</organization>
 		</developer>
 	</developers>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -46,10 +48,10 @@
 			<version>1.0.1</version>
 		</dependency>
 		<dependency>
--			<groupId>org.glassfish</groupId>
--			<artifactId>javax.json</artifactId>
--			<version>1.1</version>
--		</dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.json</artifactId>
+			<version>1.1</version>
+		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
@@ -67,19 +69,19 @@
 			<type>jar</type>
 		</dependency>
 		<dependency>
-    		<groupId>org.apache.deltaspike.modules</groupId>
-    		<artifactId>deltaspike-data-module-api</artifactId>
-    		<scope>compile</scope>
+			<groupId>org.apache.deltaspike.modules</groupId>
+			<artifactId>deltaspike-data-module-api</artifactId>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
-    		<groupId>org.apache.deltaspike.modules</groupId>
-    		<artifactId>deltaspike-data-module-impl</artifactId>
-    		<scope>runtime</scope>
+			<groupId>org.apache.deltaspike.modules</groupId>
+			<artifactId>deltaspike-data-module-impl</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
-    		<groupId>org.apache.deltaspike.cdictrl</groupId>
-    		<artifactId>deltaspike-cdictrl-api</artifactId>
-    		<scope>compile</scope>
+			<groupId>org.apache.deltaspike.cdictrl</groupId>
+			<artifactId>deltaspike-cdictrl-api</artifactId>
+			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 
@@ -123,17 +125,17 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.apache.deltaspike.distribution</groupId>
-        <artifactId>distributions-bom</artifactId>
-        <version>${deltaspike.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.apache.deltaspike.distribution</groupId>
+				<artifactId>distributions-bom</artifactId>
+				<version>${deltaspike.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 </project>

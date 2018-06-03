@@ -29,6 +29,8 @@ import static spark.Spark.port;
 import static spark.Spark.post;
 import static spark.Spark.put;
 
+import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.context.RequestScoped;
 import javax.enterprise.event.Observes;
 import javax.inject.Inject;
 import javax.json.bind.Jsonb;
@@ -47,6 +49,7 @@ import br.org.soujava.rio.transformer.JsonTransformer;
  * daniel.dias@soujava.org.br
  * twitter:@danieldiasjava
  */
+
 public class App {
 
 	@Inject
