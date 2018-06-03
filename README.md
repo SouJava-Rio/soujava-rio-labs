@@ -14,7 +14,7 @@ Exemplo         | Descrição
 [Exemplos de MicroProfile](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/microprofile) | Pasta de exemplos de MicroProfile
 [Exemplos de Struts 1/2](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/struts-samples) | Pasta de exemplos de Struts 1/2
 [Exemplos de Spring](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/spring-samples) | Pasta de exemplos de Spring
-[Exemplos de SparkJava](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/spark-samples) | Pasta de exemplos de SparkJava
+[Exemplos de MicroFramework](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/microframeworks) | Pasta de exemplos de MicroFrameworks
 [Exemplos de MVC 1.0](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/MVC1.0-samples) | Pasta de exemplos da MVC 1.0 (JSR-371)
 [Exemplos de FnProject - Serverless Platform ](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/fnProject-samples) | Pasta de exemplos do FnProject - Serverless Platform 
 
