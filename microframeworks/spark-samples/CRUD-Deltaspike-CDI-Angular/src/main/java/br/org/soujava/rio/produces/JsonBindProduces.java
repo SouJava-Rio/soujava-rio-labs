@@ -26,8 +26,6 @@ import javax.enterprise.inject.Produces;
 import javax.json.bind.Jsonb;
 import javax.json.bind.JsonbBuilder;
 
-import com.google.gson.Gson;
-
 /**
  * @author daniel 
  * github:Daniel-Dos 
