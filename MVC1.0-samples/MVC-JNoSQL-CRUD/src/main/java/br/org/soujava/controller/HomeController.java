@@ -1,7 +1,7 @@
 package br.org.soujava.controller;
 
-import javax.mvc.annotation.Controller;
-import javax.mvc.annotation.View;
+import javax.mvc.Controller;
+import javax.mvc.View;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 

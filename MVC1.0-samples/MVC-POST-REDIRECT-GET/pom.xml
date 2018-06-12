@@ -21,6 +21,10 @@
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 		<version.payara>1.0.0</version.payara>
 		<version.swarm>2017.12.1</version.swarm>
+		<ozark.version>1.0.0-m04-SNAPSHOT</ozark.version>
+		<ozark.jersey>1.0.0-m04-SNAPSHOT</ozark.jersey>
+		<ozark.resteasy>1.0.0-m04-SNAPSHOT</ozark.resteasy>
+		<mvc.version>1.0-SNAPSHOT</mvc.version>
 	</properties>
 
 	<developers>
@@ -47,13 +51,13 @@
 		<dependency>
 			<groupId>javax.mvc</groupId>
 			<artifactId>javax.mvc-api</artifactId>
-			<version>1.0-pr</version>
+			<version>${mvc.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.mvc-spec.ozark</groupId>
 			<artifactId>ozark-core</artifactId>
-			<version>1.0.0-m03</version>
+			<version>${ozark.version}</version>
 		</dependency>
 
 		<dependency>
@@ -107,7 +111,7 @@
 				<dependency>
 					<groupId>org.mvc-spec.ozark</groupId>
 					<artifactId>ozark-jersey</artifactId>
-					<version>1.0.0-m03</version>
+					<version>${ozark.jersey}</version>
 				</dependency>
 			</dependencies>
 		</profile>
@@ -134,9 +138,22 @@
 				<dependency>
 					<groupId>org.mvc-spec.ozark</groupId>
 					<artifactId>ozark-resteasy</artifactId>
-					<version>1.0.0-m03</version>
+					<version>${ozark.reseasy}</version>
 				</dependency>
 			</dependencies>
 		</profile>
 	</profiles>
+	
+	<repositories>
+		<repository>
+			<id>snapshots-repo</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 </project>

@@ -2,8 +2,8 @@ package mvc.spec.tomee.endpoint;
 
 import javax.inject.Inject;
 import javax.mvc.Models;
-import javax.mvc.annotation.Controller;
-import javax.mvc.annotation.View;
+import javax.mvc.Controller;
+import javax.mvc.View;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.QueryParam;

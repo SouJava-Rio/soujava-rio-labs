@@ -3,7 +3,7 @@ package br.org.soujava.model;
 import java.io.Serializable;
 
 import javax.inject.Named;
-import javax.mvc.annotation.RedirectScoped;
+import javax.mvc.RedirectScoped;
 
 @Named("message")
 @RedirectScoped

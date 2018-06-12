@@ -41,16 +41,6 @@ import br.org.soujava.rio.controller.ValidacaoController;
 @ApplicationPath("app")
 public class APP extends Application {
 
-	@Override
-    public Map<String, Object> getProperties() {
-        Map<String, Object> props = new HashMap<>();
-
-        // https://github.com/jersey/jersey/issues/3659
-        props.put("jersey.config.beanValidation.disable.validateOnExecutableCheck.server", true);
-
-        return props;
-    }
-
     @Override
     public Set<Class<?>> getClasses() {
         final Set<Class<?>> set = new HashSet<>();

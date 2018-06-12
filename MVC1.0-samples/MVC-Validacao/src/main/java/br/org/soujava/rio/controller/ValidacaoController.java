@@ -26,8 +26,8 @@ import static java.util.stream.Collectors.toList;
 
 import javax.inject.Inject;
 import javax.mvc.Models;
-import javax.mvc.annotation.Controller;
-import javax.mvc.annotation.View;
+import javax.mvc.Controller;
+import javax.mvc.View;
 import javax.mvc.binding.BindingResult;
 import javax.mvc.binding.ValidationError;
 import javax.validation.Valid;
@@ -61,7 +61,6 @@ public class ValidacaoController {
 
 	@POST
 	@Path("validar")
-	@ValidateOnExecution(type = ExecutableType.NONE)
 	public String registrar(@Valid @BeanParam JUG jug) {
 		if( bindingResult.isFailed()) {
 			
