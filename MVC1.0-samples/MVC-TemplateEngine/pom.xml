@@ -134,6 +134,12 @@
 			<artifactId>ozark-asciidoc</artifactId>
 			<version>${ozark.version}</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.mvc-spec.ozark.ext</groupId>
+			<artifactId>ozark-groovy</artifactId>
+			<version>${ozark.version}</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
