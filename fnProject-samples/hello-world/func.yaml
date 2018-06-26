@@ -1,6 +1,6 @@
 version: 0.0.1
 runtime: java
 cmd: br.org.soujava.rio.fn.Function::jug
-build_image: fnproject/fn-java-fdk-build:jdk9-1.0.59
-run_image: fnproject/fn-java-fdk:jdk9-1.0.59
+build_image: fnproject/fn-java-fdk-build:jdk9-1.0.62
+run_image: fnproject/fn-java-fdk:jdk9-1.0.62
 format: http
