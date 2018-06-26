@@ -9,6 +9,8 @@ Simple example of using JSR-371 together with MongoDB to do CRUD operations.
 - MongoDB 3.6
 - JNoSQL
 
+Docker = https://hub.docker.com/r/danieldiasjava/mvc-jnosql-crud/
+
 # Run
 
 - Start **MongoDB** default port=27017 with the command in the Prompt / Shell: `mongod` 
