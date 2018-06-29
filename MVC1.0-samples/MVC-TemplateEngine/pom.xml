@@ -140,12 +140,11 @@
 			<artifactId>ozark-groovy</artifactId>
 			<version>${ozark.version}</version>
 		</dependency>
-
+		
 		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.16.14</version>
-			<scope>provided</scope>
+			<groupId>org.mvc-spec.ozark.ext</groupId>
+			<artifactId>ozark-jtwig</artifactId>
+			<version>${ozark.version}</version>
 		</dependency>
 	</dependencies>
 	<build>

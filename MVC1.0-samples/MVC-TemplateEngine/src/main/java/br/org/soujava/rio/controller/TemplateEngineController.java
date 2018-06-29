@@ -44,6 +44,13 @@ public class TemplateEngineController {
 	private Models models;
 	
 	@GET
+	@Path("jtwig")
+	@View("resultado.twig.html")
+	public void getJtwig() {
+		this.models.put("jtwig", "Jtwig");
+	}
+
+	@GET
 	@Path("groovy")
 	@View("resultado.tpl")
 	public void getGroovy() {
