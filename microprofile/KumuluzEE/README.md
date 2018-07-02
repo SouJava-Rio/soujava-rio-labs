@@ -31,6 +31,7 @@ sudo docker run --name demo -p 8080:8080 microprofile-kumuluzEE-demo
 
 acesse a URL -> http://locahost:8080/app/JUG
 
+acessar o MicroProfile OpenAPI -> http://localhost:8080/openapi
 ## Para e remover o Container
 
 sudo docker stop demo
