@@ -1,4 +1,4 @@
-FROM jboss/base-jdk:8
+FROM openjdk:8u171-jre
 
 COPY /target/MVC1.0.Ozark-microbundle.jar /opt/MVC1.0.Ozark-microbundle.jar
 
