@@ -33,6 +33,8 @@ sudo docker run --name demo -p 8080:8080 -h localhost microprofile-payara-demo
 
 acesse a URL -> http://localhost:8080/microprofile-payara-0.0.1-SNAPSHOT/app/JUG
 
+acessar o MicroProfile OpenAPI -> http://localhost:8080/openapi/
+
 ## Para e remover o Container
 
 sudo docker stop demo
