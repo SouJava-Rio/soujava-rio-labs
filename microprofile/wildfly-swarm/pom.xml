@@ -1,11 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.org.soujava.rio</groupId>
 	<artifactId>MicroProfile-Wildfly-Swarm</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>MicroProfile-Wildfly-Swarm</name>
+	<name>MicroProfile-ThornTail-Swarm</name>
 
 	<organization>
 		<name>SouJava { Rio }</name>
@@ -29,9 +30,9 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>org.wildfly.swarm</groupId>
+				<groupId>io.thorntail</groupId>
 				<artifactId>bom-all</artifactId>
-				<version>2018.5.0</version>
+				<version>2.0.0.Final</version>
 				<scope>import</scope>
 				<type>pom</type>
 			</dependency>
@@ -47,8 +48,13 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.wildfly.swarm</groupId>
+			<groupId>io.thorntail</groupId>
 			<artifactId>microprofile</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.thorntail</groupId>
+			<artifactId>microprofile-openapi</artifactId>
 		</dependency>
 	</dependencies>
 
@@ -56,9 +62,8 @@
 		<finalName>microprofile-sample</finalName>
 		<plugins>
 			<plugin>
-				<groupId>org.wildfly.swarm</groupId>
-				<artifactId>wildfly-swarm-plugin</artifactId>
-				<version>2018.5.0</version>
+				<groupId>io.thorntail</groupId>
+				<artifactId>thorntail-maven-plugin</artifactId>
 				<executions>
 					<execution>
 						<goals>

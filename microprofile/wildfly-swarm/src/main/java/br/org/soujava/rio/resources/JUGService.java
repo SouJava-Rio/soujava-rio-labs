@@ -33,6 +33,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
+import org.eclipse.microprofile.openapi.annotations.Operation;
 
 /**
  * @author Daniel Dias
@@ -58,6 +59,8 @@ public class JUGService {
 	private String descricao;	
 
 	@GET
+	@Operation(summary = "Exibi uma JUG",
+	   description = "Gera um documento Json com 3 atributos.")
 	public Response getJUG() {
 
 		JsonObject json = Json.createObjectBuilder()
