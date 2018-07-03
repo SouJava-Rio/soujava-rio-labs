@@ -35,6 +35,11 @@ acesse a URL -> http://localhost:8080/microprofile-payara-0.0.1-SNAPSHOT/app/JUG
 
 acessar o MicroProfile OpenAPI -> http://localhost:8080/openapi/
 
+#Swagger
+
+![OpenAPI](swagger.png)  
+
+
 ## Para e remover o Container
 
 sudo docker stop demo
@@ -44,3 +49,4 @@ sudo docker rm demo
 ## Links informativos
 
 * Payara-Micro [Payara-Micro](https://www.payara.fish/payara_micro)
+

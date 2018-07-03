@@ -35,6 +35,10 @@ acesse a URL -> http://locahost:8080/app/JUG
 
 acessar o MicroProfile OpenAPI -> http://localhost:8080/openapi/
 
+#Swagger
+
+![OpenAPI](swagger.png)  
+
 ## Para e remover o Container
 
 sudo docker stop demo
