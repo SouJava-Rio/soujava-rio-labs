@@ -19,7 +19,7 @@ public class DocumentCollectionProducer {
     @ApplicationScoped
     public DocumentCollectionManager getDocumentCollectionManager() {
         DocumentConfiguration<?> configuration = new MongoDBDocumentConfiguration();
-        Settings settings = Settings.builder().put("mongodb-server-host-1", "localhost:27017").build();
+        Settings settings = Settings.builder().put("mongodb-server-host-1", "mongo:27017").build();
         DocumentCollectionManagerFactory managerFactory = configuration.get(settings);
         return managerFactory.get(DOCUMENT_COLLECTION);
     }

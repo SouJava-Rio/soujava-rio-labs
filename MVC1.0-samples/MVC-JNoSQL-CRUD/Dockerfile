@@ -1,4 +1,4 @@
-FROM openjdk:8u171-jre
+FROM openjdk:8u171-jdk-alpine
 
 COPY /target/MVC1.0.Ozark-microbundle.jar /opt/MVC1.0.Ozark-microbundle.jar
 
