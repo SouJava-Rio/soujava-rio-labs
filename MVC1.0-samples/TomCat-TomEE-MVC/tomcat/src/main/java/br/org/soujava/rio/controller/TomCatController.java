@@ -46,6 +46,7 @@ public class TomCatController {
 	@GET
 	@View("hello.jsp")
 	public void getHello(@QueryParam("name") String name) {
+		System.out.println(name);
 		this.models.put("hello",name);
 	}
 }
