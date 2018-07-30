@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.org.soujava.rio</groupId>
@@ -19,11 +20,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
-		<version.payara>1.0.0</version.payara>
-		<version.swarm>2017.12.1</version.swarm>
+		<version.payara>1.0.1</version.payara>
 		<ozark.version>1.0.0-m04-SNAPSHOT</ozark.version>
 		<ozark.jersey>1.0.0-m04-SNAPSHOT</ozark.jersey>
-		<ozark.resteasy>1.0.0-m04-SNAPSHOT</ozark.resteasy>
 		<mvc.version>1.0-SNAPSHOT</mvc.version>
 	</properties>
 
@@ -35,18 +34,6 @@
 		</developer>
 	</developers>
 
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.wildfly.swarm</groupId>
-				<artifactId>bom-all</artifactId>
-				<version>${version.swarm}</version>
-				<scope>import</scope>
-				<type>pom</type>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-
 	<dependencies>
 		<dependency>
 			<groupId>javax.mvc</groupId>
@@ -56,14 +43,14 @@
 
 		<dependency>
 			<groupId>org.mvc-spec.ozark</groupId>
-			<artifactId>ozark-core</artifactId>
-			<version>${ozark.version}</version>
+			<artifactId>ozark-jersey</artifactId>
+			<version>${ozark.jersey}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.eclipse.microprofile</groupId>
 			<artifactId>microprofile</artifactId>
-			<version>1.2</version>
+			<version>1.3</version>
 			<type>pom</type>
 			<scope>provided</scope>
 		</dependency>
@@ -71,13 +58,15 @@
 		<dependency>
 			<groupId>org.glassfish</groupId>
 			<artifactId>javax.faces</artifactId>
-			<version>2.2.14</version>
+			<version>2.3.6</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>javax.faces</groupId>
 			<artifactId>javax.faces-api</artifactId>
-			<version>2.2</version>
+			<version>2.3</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!-- Template Engine -->
@@ -91,18 +80,44 @@
 			<groupId>org.mvc-spec.ozark.ext</groupId>
 			<artifactId>ozark-pebble</artifactId>
 			<version>${ozark.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.google.guava</groupId>
+					<artifactId>guava</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
 			<groupId>org.mvc-spec.ozark.ext</groupId>
 			<artifactId>ozark-thymeleaf</artifactId>
 			<version>${ozark.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
 			<groupId>org.mvc-spec.ozark.ext</groupId>
 			<artifactId>ozark-velocity</artifactId>
 			<version>${ozark.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.commons</groupId>
+					<artifactId>commons-lang3</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
@@ -115,12 +130,39 @@
 			<groupId>org.mvc-spec.ozark.ext</groupId>
 			<artifactId>ozark-jade</artifactId>
 			<version>${ozark.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+
+				<exclusion>
+					<groupId>
+						com.googlecode.concurrentlinkedhashmap
+					</groupId>
+					<artifactId>concurrentlinkedhashmap-lru</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.parboiled</groupId>
+					<artifactId>parboiled-java</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
 			<groupId>org.mvc-spec.ozark.ext</groupId>
 			<artifactId>ozark-handlebars</artifactId>
 			<version>${ozark.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.commons</groupId>
+					<artifactId>commons-lang3</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
@@ -134,13 +176,13 @@
 			<artifactId>ozark-asciidoc</artifactId>
 			<version>${ozark.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.mvc-spec.ozark.ext</groupId>
 			<artifactId>ozark-groovy</artifactId>
 			<version>${ozark.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.mvc-spec.ozark.ext</groupId>
 			<artifactId>ozark-jtwig</artifactId>
@@ -149,44 +191,29 @@
 	</dependencies>
 	<build>
 		<finalName>MVC-TemplateEngine</finalName>
+		<plugins>
+			<plugin>
+				<groupId>fish.payara.maven.plugins</groupId>
+				<artifactId>payara-micro-maven-plugin</artifactId>
+				<version>${version.payara}</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>bundle</goal>
+							<goal>start</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<useUberJar>true</useUberJar>
+					<deployWar>false</deployWar>
+					<daemon>false</daemon>
+					<payaraVersion>5.182</payaraVersion>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 
-	<profiles>
-		<profile>
-			<id>payara</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>fish.payara.maven.plugins</groupId>
-						<artifactId>payara-micro-maven-plugin</artifactId>
-						<version>${version.payara}</version>
-						<executions>
-							<execution>
-								<goals>
-									<goal>bundle</goal>
-									<goal>start</goal>
-								</goals>
-							</execution>
-						</executions>
-						<configuration>
-							<useUberJar>true</useUberJar>
-							<deployWar>false</deployWar>
-							<daemon>false</daemon>
-							<payaraVersion>5.182</payaraVersion>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-			<dependencies>
-				<dependency>
-					<groupId>org.mvc-spec.ozark</groupId>
-					<artifactId>ozark-jersey</artifactId>
-					<version>${ozark.jersey}</version>
-				</dependency>
-			</dependencies>
-		</profile>
-	</profiles>
-	
 	<repositories>
 		<repository>
 			<id>snapshots-repo</id>
