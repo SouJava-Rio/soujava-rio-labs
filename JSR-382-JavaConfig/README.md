@@ -13,7 +13,7 @@ Projeto         | Descrição
 
 ## Links informativos
 
-* Configuration API 1.0 - JSR 385-JCP [Units of Measurement - JSR 382](https://jcp.org/en/jsr/detail?id=382)
+* Configuration API 1.0 - JSR 382-JCP [Configuration API 1.0 - JSR 382](https://jcp.org/en/jsr/detail?id=382)
 * apache/geronimo-config [apache/geronimo-config]( https://github.com/apache/geronimo-config/tree/ConfigJSR) - Umas da Implementações
 * Eclipse ConfigJSR [Eclipse ConfigJSR](https://github.com/eclipse/ConfigJSR)
 
