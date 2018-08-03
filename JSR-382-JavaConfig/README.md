@@ -10,6 +10,7 @@ Aqui estão contribuições de projetos que usam a spec JavaConfig - JSR 382
 Projeto         | Descrição
 --------------- | -------------
 [SimpleDependencyInjection](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/JSR-382-JavaConfig/SimpleDependencyInjection/javaconfig) | SimpleDependencyInjection
+[SimpleProgrammatic](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/JSR-382-JavaConfig/SimpleProgrammatic/javaconfig) | Simple Programmatic 
 
 ## Links informativos
 
