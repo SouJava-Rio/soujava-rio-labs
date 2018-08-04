@@ -22,6 +22,9 @@
  */
 package br.org.soujava.rio.javaconfig;
 
+import java.util.Optional;
+import java.util.logging.Logger;
+
 import javax.config.inject.ConfigProperty;
 import javax.enterprise.event.Observes;
 import javax.inject.Inject;
@@ -40,8 +43,19 @@ public class JavaConfiguration {
 	@Inject
 	@ConfigProperty(name="org.jug.name", defaultValue="SouJava-Rio")
 	private String nomeJug;
+	
+	@Inject
+	@ConfigProperty(name="org.jug.members.number", defaultValue="0")
+	private Optional<Integer> membersNumber;
+
+	@Inject
+	@ConfigProperty(name="org.jug.reunion.month", defaultValue="1")
+	private javax.inject.Provider<Long> reunionMonth;
 
 	public void main(@Observes ContainerInitialized event) {
-		System.out.println(nomeJug);
-	}
+		
+		System.out.println("Nome da JUG " + nomeJug);
+		System.out.println("Numero de membros  " + membersNumber);
+		System.out.println("Reunião por mes " + reunionMonth.get());
+	} 
 }
