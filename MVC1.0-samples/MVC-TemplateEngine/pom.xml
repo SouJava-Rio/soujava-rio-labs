@@ -74,6 +74,7 @@
 			<groupId>org.mvc-spec.ozark.ext</groupId>
 			<artifactId>ozark-jetbrick</artifactId>
 			<version>${ozark.version}</version>
+			
 		</dependency>
 
 		<dependency>
@@ -161,6 +162,10 @@
 				<exclusion>
 					<groupId>org.apache.commons</groupId>
 					<artifactId>commons-lang3</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.antlr</groupId>
+					<artifactId>antlr4-runtime</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
