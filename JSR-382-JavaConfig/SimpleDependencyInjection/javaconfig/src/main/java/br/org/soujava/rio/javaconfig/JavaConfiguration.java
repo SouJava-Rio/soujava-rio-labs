@@ -22,12 +22,13 @@
  */
 package br.org.soujava.rio.javaconfig;
 
-import java.util.Optional;
-import java.util.logging.Logger;
+import java.util.List;
 
 import javax.config.inject.ConfigProperty;
 import javax.enterprise.event.Observes;
 import javax.inject.Inject;
+import javax.json.bind.JsonbBuilder;
+import javax.json.bind.JsonbConfig;
 
 import org.jboss.weld.environment.se.events.ContainerInitialized;
 
@@ -41,21 +42,28 @@ import org.jboss.weld.environment.se.events.ContainerInitialized;
 public class JavaConfiguration {
 
 	@Inject
-	@ConfigProperty(name="org.jug.name", defaultValue="SouJava-Rio")
+	@ConfigProperty(name="org.jug.nome", defaultValue="SouJava")
 	private String nomeJug;
 	
 	@Inject
-	@ConfigProperty(name="org.jug.members.number", defaultValue="0")
-	private Optional<Integer> membersNumber;
-
+	@ConfigProperty(name="org.jug.site.url", defaultValue="http://soujava.or.br")
+	private String siteURL;
+	
 	@Inject
-	@ConfigProperty(name="org.jug.reunion.month", defaultValue="1")
-	private javax.inject.Provider<Long> reunionMonth;
+	@ConfigProperty(name="org.jug.reuniao.mes", defaultValue="0")
+	private int reuniaoMes;
+	
+	@Inject
+	@ConfigProperty(name="org.jug.membros.quant", defaultValue="8")
+	private int quanMembros;
 
 	public void main(@Observes ContainerInitialized event) {
 		
-		System.out.println("Nome da JUG " + nomeJug);
-		System.out.println("Numero de membros  " + membersNumber);
-		System.out.println("Reunião por mes " + reunionMonth.get());
+		var jsonbConfig = new JsonbConfig().withFormatting(true);
+		var jsonB = JsonbBuilder.create(jsonbConfig);
+		
+		var JugConfig = List.of(nomeJug, siteURL, reuniaoMes, quanMembros);
+		
+		System.out.println(jsonB.toJson(JugConfig));
 	} 
 }
