@@ -22,21 +22,36 @@
  */
 package br.org.soujava.rio.javaconfig;
 
+import java.util.List;
+
+import javax.config.Config;
 import javax.config.ConfigProvider;
+import javax.json.bind.JsonbBuilder;
+import javax.json.bind.JsonbConfig;
 
 /**
- * @author Daniel Dias
- * github:Daniel-Dos
+ * @author Daniel Dias 
+ * github:Daniel-Dos 
  * daniel.dias@soujava.org.br
  * twitter:@danieldiasjava
  */
 public class JavaConfiguration {
 	public static void main(String[] args) {
 
-		var config = ConfigProvider.getConfig();
+		Config config = ConfigProvider.getConfig();
 		
-		var nomeJug = config.getValue("org.soujava", String.class);
+		var jsonbConfig = new JsonbConfig().withFormatting(true);
+		var jsonB = JsonbBuilder.create(jsonbConfig);
+
+		var nomeJug = config.getValue("org.jug.nome", String.class);
+		var siteURL = config.getValue("org.jug.site.url", String.class);
+		var reuniaoMes = config.getValue("org.jug.reuniao.mes", Integer.class);
+		var quanMembro = config.getValue("org.jug.membros.quant", Integer.class);
 		
-		System.out.println(nomeJug);
+		var  JUGConfig = List.of(nomeJug, siteURL, reuniaoMes,quanMembro);
+		
+		var output = jsonB.toJson(JUGConfig);
+
+		System.out.println(output);
 	}
 }
