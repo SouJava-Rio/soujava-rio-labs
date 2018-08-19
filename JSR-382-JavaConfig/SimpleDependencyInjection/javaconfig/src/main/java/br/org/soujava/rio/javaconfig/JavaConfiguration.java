@@ -24,6 +24,8 @@ package br.org.soujava.rio.javaconfig;
 
 import java.util.List;
 
+import javax.config.Config;
+import javax.config.ConfigProvider;
 import javax.config.inject.ConfigProperty;
 import javax.enterprise.event.Observes;
 import javax.inject.Inject;
@@ -46,7 +48,7 @@ public class JavaConfiguration {
 	private String nomeJug;
 	
 	@Inject
-	@ConfigProperty(name="org.jug.site.url", defaultValue="http://soujava.or.br")
+	@ConfigProperty(name="org.jug.site.url", defaultValue="http://soujava.org.br")
 	private String siteURL;
 	
 	@Inject
@@ -56,7 +58,9 @@ public class JavaConfiguration {
 	@Inject
 	@ConfigProperty(name="org.jug.membros.quant", defaultValue="8")
 	private int quanMembros;
-
+	
+	
+	
 	public void main(@Observes ContainerInitialized event) {
 		
 		var jsonbConfig = new JsonbConfig().withFormatting(true);
