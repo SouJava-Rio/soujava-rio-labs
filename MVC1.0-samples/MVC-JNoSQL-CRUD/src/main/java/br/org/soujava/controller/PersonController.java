@@ -134,7 +134,7 @@ public class PersonController {
     
     private void getErros() {
     	erros.setErrors(
-                bindingResult.getAllValidationErrors().stream()
+                bindingResult.getAllErrors().stream()
                 .collect(toList()));
     }
 }

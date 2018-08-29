@@ -79,9 +79,9 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
-		<jnosql.version>0.0.4-SNAPSHOT</jnosql.version>
+		<jnosql.version>0.0.7-SNAPSHOT</jnosql.version>
 		<ozark.version>1.0.0-m04-SNAPSHOT</ozark.version>
-		<version.payara>1.0.0</version.payara>
+		<version.payara>1.0.1</version.payara>
 	</properties>
 
 	<repositories>
