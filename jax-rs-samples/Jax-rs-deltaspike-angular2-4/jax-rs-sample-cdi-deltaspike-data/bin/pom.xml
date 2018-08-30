@@ -9,7 +9,7 @@
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<deltaspike.version>1.8.2</deltaspike.version>
+		<deltaspike.version>1.8.0</deltaspike.version>
 	</properties>
 
  <dependencyManagement>
@@ -30,7 +30,7 @@
   </organization>
   
   	<build>
-		<finalName>demo</finalName>
+		<finalName>${project.artifactId}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

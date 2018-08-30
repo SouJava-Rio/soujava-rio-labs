@@ -37,25 +37,25 @@ export class JUGService {
     /**ADICIONA UMA NOVA JUG */
     addPessoa(jug: JUG) {
 
-        return this.http.post(this.baseUrlService + '/cadastrar', JSON.stringify(jug), this.options)
+        return this.http.post(this.baseUrlService + 'cadastrar', JSON.stringify(jug), this.options)
         .map(res => res.json());
     }
     /**EXCLUI UMA JUG */
     excluirPessoa(codigo: number) {
 
-        return this.http.delete(this.baseUrlService + '/deletar/' + codigo).map(res => res.json());
+        return this.http.delete(this.baseUrlService + 'deletar/' + codigo).map(res => res.json());
     }
 
     /**CONSULTA UM JUG PELO CÓDIGO */
     getPessoa(codigo: number) {
 
-        return this.http.get(this.baseUrlService + '/consultar/' + codigo).map(res => res.json());
+        return this.http.get(this.baseUrlService + 'consultar/' + codigo).map(res => res.json());
     }
 
     /**ATUALIZA INFORMAÇÕES DA JUG */
     atualizarPessoa(jug: JUG) {
 
-        return this.http.put(this.baseUrlService + '/editar', JSON.stringify(jug), this.options)
+        return this.http.put(this.baseUrlService + 'editar', JSON.stringify(jug), this.options)
         .map(res => res.json());
     }
 }

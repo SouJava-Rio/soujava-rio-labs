@@ -25,6 +25,7 @@ package br.org.soujava.rio.repository;
 
 import org.apache.deltaspike.data.api.EntityRepository;
 import org.apache.deltaspike.data.api.Repository;
+import org.apache.deltaspike.jpa.api.transaction.Transactional;
 
 import br.org.soujava.rio.model.JUG;
 

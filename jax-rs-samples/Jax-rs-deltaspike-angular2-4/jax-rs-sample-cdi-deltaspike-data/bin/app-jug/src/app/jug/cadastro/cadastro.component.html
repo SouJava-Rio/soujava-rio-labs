@@ -1,0 +1,36 @@
+ <div class="container">
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        <form (ngSubmit)="salvar()">
+            <h2>{{titulo}}</h2>
+
+            <div class="form-group">
+              <label for="id">Codigo:</label>
+              <input id="id" name="id" [(ngModel)]="jug.id" class="form-control" disabled>
+          </div>
+
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome" [(ngModel)]="jug.nome" class="form-control" placeholder="Nome da JUG" autofocus>
+            </div>
+
+            <div class="form-group">
+                <label for="leader">Leader:</label>
+                <input type="text" id="leader" name="leader" [(ngModel)]="jug.leader" class="form-control" placeholder="JUG Leader">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" [(ngModel)]="jug.email" class="form-control" placeholder="Email">
+            </div>
+
+            <div class="form-group">
+                <label for="descricao">Descricao:</label>
+                <textarea name="descricao" id="descricao" [(ngModel)]="jug.descricao" class="form-control" placeholder="descriçao da JUG"></textarea>
+            </div>
+
+            <button type="submit" class="{{botao}}">{{acao}}</button>
+        </form>
+    </div>
+</div>
+</div>
