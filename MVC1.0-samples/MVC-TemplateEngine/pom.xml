@@ -213,7 +213,7 @@
 					<useUberJar>true</useUberJar>
 					<deployWar>false</deployWar>
 					<daemon>false</daemon>
-					<payaraVersion>5.182</payaraVersion>
+					<payaraVersion>5.183</payaraVersion>
 				</configuration>
 			</plugin>
 		</plugins>

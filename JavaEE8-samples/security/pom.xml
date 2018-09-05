@@ -18,7 +18,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
-		<version.payara>1.0.0</version.payara>
+		<version.payara>1.0.1</version.payara>
 		<ozark.version>1.0.0-m04-SNAPSHOT</ozark.version>
 		<ozark.jersey>1.0.0-m04-SNAPSHOT</ozark.jersey>
 		<mvc.version>1.0-SNAPSHOT</mvc.version>
@@ -82,7 +82,7 @@
 					<useUberJar>true</useUberJar>
 					<deployWar>false</deployWar>
 					<daemon>false</daemon>
-					<payaraVersion>5.182</payaraVersion>
+					<payaraVersion>5.183</payaraVersion>
 				</configuration>
 			</plugin>
 		</plugins>

@@ -19,7 +19,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
-		<version.payara>1.0.0</version.payara>
+		<version.payara>1.0.1</version.payara>
 		<version.swarm>2017.12.1</version.swarm>
 		<ozark.version>1.0.0-m04-SNAPSHOT</ozark.version>
 		<ozark.jersey>1.0.0-m04-SNAPSHOT</ozark.jersey>
@@ -63,7 +63,7 @@
 		<dependency>
 			<groupId>org.eclipse.microprofile</groupId>
 			<artifactId>microprofile</artifactId>
-			<version>1.2</version>
+			<version>2.0.1</version>
 			<type>pom</type>
 			<scope>provided</scope>
 		</dependency>
@@ -113,7 +113,7 @@
 							<useUberJar>true</useUberJar>
 							<deployWar>false</deployWar>
 							<daemon>false</daemon>
-							<payaraVersion>5.182</payaraVersion>
+							<payaraVersion>5.183</payaraVersion>
 						</configuration>
 					</plugin>
 				</plugins>
