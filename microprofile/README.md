@@ -8,6 +8,7 @@ Projeto         | Descrição
 [Payara-Micro](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/microprofile/payara-micro) | Projeto utilizando Payara-Micro
 [Wildfly-Swarm](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/microprofile/wildfly-swarm) | Projeto utilizando Wildfly-Swarm
 [KumuluzEE](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/microprofile/KumuluzEE) | Projeto utilizando KumuluzEE
+[Helidon](https://github.com/SouJava-Rio/soujava-rio-labs/tree/master/microprofile/helidon) | Projeto utilizando Helidon
 [Outros Provedores]()
 
 
