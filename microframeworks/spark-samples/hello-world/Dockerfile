@@ -1,4 +1,4 @@
-FROM jboss/base-jdk:8
+FROM openjdk:8u171-jdk-alpine
 
 ADD /target/SparkJava-sample.jar /opt/SparkJava-sample.jar
 ADD /target/dependency-jars/ /opt/dependency-jars/

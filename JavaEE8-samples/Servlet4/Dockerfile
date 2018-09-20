@@ -1,4 +1,4 @@
-FROM jboss/base-jdk:8
+FROM openjdk:8u171-jdk-alpine
 
 ADD /target/Servlet4-sample-microbundle.jar /opt/servlet4.jar
 

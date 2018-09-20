@@ -1,4 +1,4 @@
-FROM jboss/base-jdk:8
+FROM openjdk:8u171-jdk-alpine
 
 ADD /target/KumuluzEE-0.0.1-SNAPSHOT.jar /opt/demo-kumuluzEE.jar
 

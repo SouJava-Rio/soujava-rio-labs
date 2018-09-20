@@ -1,4 +1,4 @@
-FROM jboss/base-jdk:8
+FROM openjdk:8u171-jdk-alpine
 
 ADD /target/microprofile-sample-microbundle.jar /opt/microprofile-sample.jar
 

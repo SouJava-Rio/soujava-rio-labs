@@ -1,4 +1,4 @@
-FROM jboss/base-jdk:8
+FROM openjdk:8u171-jdk-alpine
 
 ADD /target/Struts1-simples-microbundle.jar /opt/Struts1-sample.jar
 
