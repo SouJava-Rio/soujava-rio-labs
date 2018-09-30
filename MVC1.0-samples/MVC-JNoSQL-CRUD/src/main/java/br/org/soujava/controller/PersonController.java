@@ -61,12 +61,12 @@ public class PersonController {
     @Path("new")
     public Viewable newElement() {
     	this.models.put("countries", getCountries());
-        return new Viewable("insert.jsp");
+        return new Viewable("insert");
     }
 
     @GET
     @Path("show")
-    @View("list.jsp")
+    @View("list")
     public void list() {
         this.models.put("list", repository.findAll());
     }
@@ -79,7 +79,7 @@ public class PersonController {
     		this.getErros();
     		this.models.put("countries", getCountries());
     		this.models.put("person", person);
-    		return "insert.jsp";
+    		return "insert";
 
     	}
         repository.save(person);
@@ -95,7 +95,7 @@ public class PersonController {
     		this.getErros();
     		this.models.put("countries", getCountries());
     		this.models.put("person", person);
-    		return "change.jsp";
+    		return "change";
     		
     	}
         repository.save(person);
@@ -110,7 +110,7 @@ public class PersonController {
         Optional<Person> person = repository.findById(id);
         this.models.put("person", person.orElseThrow(NOT_FOUND_EXCEPTION));
         this.models.put("countries", getCountries());
-        return new Viewable("change.jsp", models);
+        return new Viewable("change", models);
     }
 
     @GET

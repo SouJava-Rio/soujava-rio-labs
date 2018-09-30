@@ -10,6 +10,6 @@ import javax.ws.rs.Path;
 public class HomeController {
 
 	@GET
-	@View("home.jsp")
+	@View("home")
 	public void homePage() {}
 }

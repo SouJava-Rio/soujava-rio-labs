@@ -12,8 +12,8 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<ozark.version>1.0.0-m04-SNAPSHOT</ozark.version>
-		<ozark.resteasy>1.0.0-m04-SNAPSHOT</ozark.resteasy>
+		<ozark.version>1.0.0-SNAPSHOT</ozark.version>
+		<ozark.resteasy>1.0.0-SNAPSHOT</ozark.resteasy>
 		<mvc.version>1.0-SNAPSHOT</mvc.version>
 		<resteasy.version>3.6.0.Final</resteasy.version>
 	</properties>
