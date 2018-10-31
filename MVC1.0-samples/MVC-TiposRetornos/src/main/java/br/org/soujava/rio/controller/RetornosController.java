@@ -46,7 +46,7 @@ public class RetornosController {
 	private Models models;
 
 	@GET
-	@View("retorno.jsp")
+	@View("retorno")
 	@Path("void")
 	public void getView() {
 		this.models.put("retorno", "Retorno do tipo void usando @View");
@@ -56,20 +56,20 @@ public class RetornosController {
 	@Path("String")
 	public String getString() {
 		this.models.put("retorno", "Retorno do tipo String");
-		return "retorno.jsp";
+		return "retorno";
 	}
 
 	@GET
 	@Path("Response")
 	public Response getResponse() {
 		this.models.put("retorno", "Retorno do Tipo Response do Jax-RS");
-		return Response.status(Response.Status.OK).entity("retorno.jsp").build();
+		return Response.status(Response.Status.OK).entity("retorno").build();
 	}
 
 	@GET
 	@Path("ViewAble")
 	public Viewable getViewAble() {
 		this.models.put("retorno", "Retorno do Tipo Viewable,especifico da RI OZARK");
-		return new Viewable("retorno.jsp");
+		return new Viewable("retorno");
 	}
 }

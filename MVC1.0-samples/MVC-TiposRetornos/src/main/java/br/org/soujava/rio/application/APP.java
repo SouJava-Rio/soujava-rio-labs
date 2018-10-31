@@ -22,8 +22,13 @@
  */
 package br.org.soujava.rio.application;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
+
+import org.mvcspec.ozark.Properties;
 
 /**
  * @author Daniel Dias
@@ -32,4 +37,16 @@ import javax.ws.rs.core.Application;
  * twitter:@danieldiasjava
  */
 @ApplicationPath("app")
-public class APP extends Application {}
+public class APP extends Application {
+    
+    /* (non-Javadoc)
+     * @see javax.ws.rs.core.Application#getProperties()
+     */
+    @Override
+    public Map<String, Object> getProperties() {
+        Map<String,Object> ma= new HashMap<>();
+        ma.put(Properties.DEFAULT_VIEW_FILE_EXTENSION, "jsp");
+        return ma;
+        
+    }
+}
