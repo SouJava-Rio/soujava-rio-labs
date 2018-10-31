@@ -33,5 +33,4 @@ import javax.ws.rs.core.Application;
  * twitter:@danieldiasjava
  */
 @ApplicationPath("app")
-public class Boot extends Application {
-}
+public class Boot extends Application { }

@@ -24,6 +24,7 @@ package br.org.soujava.rio.resources;
  */
 
 import javax.inject.Inject;
+import javax.inject.Singleton;
 import javax.json.Json;
 import javax.json.JsonObject;
 import javax.ws.rs.GET;
@@ -34,6 +35,9 @@ import javax.ws.rs.core.Response;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 import org.eclipse.microprofile.openapi.annotations.Operation;
+import org.eclipse.microprofile.openapi.annotations.media.Content;
+import org.eclipse.microprofile.openapi.annotations.media.Schema;
+import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 
 /**
  * @author Daniel Dias
@@ -61,6 +65,9 @@ public class JUGService {
 	@GET
 	@Operation(summary = "Exibi uma JUG",
 			   description = "Gera um documento Json com 3 atributos.")
+	@APIResponse(description = "A JUG",
+	             content = @Content(mediaType = "application/json"),
+	             responseCode = "200")
 	public Response getJUG() {
 
 		JsonObject json = Json.createObjectBuilder()

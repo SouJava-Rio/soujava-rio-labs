@@ -16,7 +16,7 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
-		<version.payara>1.0.0</version.payara>
+		<version.payara>1.0.1</version.payara>
 	</properties>
 
 	<developers>
@@ -32,7 +32,7 @@
 		<dependency>
 			<groupId>org.eclipse.microprofile</groupId>
 			<artifactId>microprofile</artifactId>
-			<version>2.0.1</version>
+			<version>2.1</version>
 			<type>pom</type>
 			<scope>provided</scope>
 		</dependency>

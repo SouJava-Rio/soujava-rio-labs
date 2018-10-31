@@ -15,7 +15,7 @@ echo Executando a aplicação.....
 
 printf "\n"
 
-docker run --name soujava soujavario/payara:latest
+docker run --name soujava -p 8080:8080 -h localhost soujavario/payara:latest
 
 
 printf "\n"
