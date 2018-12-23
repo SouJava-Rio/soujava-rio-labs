@@ -9,5 +9,5 @@ charset = utf-8
 
 # 4 space indentation
 [*.{java,html,js,xml,jsp}]
-indent_style = tab
+indent_style = space
 tab_width = 4
