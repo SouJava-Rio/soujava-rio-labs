@@ -25,14 +25,11 @@ package br.org.soujava.rio.controller;
 import static java.util.stream.Collectors.toList;
 
 import javax.inject.Inject;
-import javax.mvc.Models;
 import javax.mvc.Controller;
+import javax.mvc.Models;
 import javax.mvc.View;
 import javax.mvc.binding.BindingResult;
-import javax.mvc.binding.ValidationError;
 import javax.validation.Valid;
-import javax.validation.executable.ExecutableType;
-import javax.validation.executable.ValidateOnExecution;
 import javax.ws.rs.BeanParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -45,7 +42,7 @@ import br.org.soujava.rio.model.JUG;
  * github:Daniel-Dos
  * daniel.dias@soujava.org.br
  * twitter:@danieldiasjava
- */
+ */ 
 @Controller
 @Path("validacao")
 public class ValidacaoController {
@@ -77,6 +74,6 @@ public class ValidacaoController {
 	public void getForm() {}
 	
 	private void getErrors() {
-		erros.setErrors(bindingResult.getAllValidationErrors().stream().collect(toList()));
+		erros.setErrors(bindingResult.getAllErrors().stream().collect(toList()));
 	}
 }

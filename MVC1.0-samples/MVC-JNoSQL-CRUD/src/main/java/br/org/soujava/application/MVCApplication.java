@@ -6,7 +6,7 @@ import java.util.Map;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
-import org.mvcspec.ozark.Properties;
+import org.eclipse.krazo.Properties;
 
 @ApplicationPath("app")
 public class MVCApplication extends Application { 

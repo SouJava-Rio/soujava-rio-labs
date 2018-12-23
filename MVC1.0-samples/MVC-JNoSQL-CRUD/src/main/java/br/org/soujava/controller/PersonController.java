@@ -11,24 +11,21 @@ import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 import javax.inject.Inject;
-import javax.mvc.Models;
 import javax.mvc.Controller;
+import javax.mvc.Models;
 import javax.mvc.View;
 import javax.mvc.binding.BindingResult;
-import javax.mvc.binding.ValidationError;
 import javax.validation.Valid;
 import javax.ws.rs.BeanParam;
-import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
-import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.WebApplicationException;
 
+import org.eclipse.krazo.engine.Viewable;
 import org.jnosql.artemis.Database;
 import org.jnosql.artemis.DatabaseType;
-import org.mvcspec.ozark.engine.Viewable;
 
 import br.org.soujava.model.Errors;
 import br.org.soujava.model.Messages;

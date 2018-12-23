@@ -21,9 +21,7 @@
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 		<version.payara>1.0.1</version.payara>
 		<version.swarm>2017.12.1</version.swarm>
-		<ozark.version>1.0.0-SNAPSHOT</ozark.version>
-		<ozark.jersey>1.0.0-SNAPSHOT</ozark.jersey>
-		<ozark.resteasy>1.0.0-SNAPSHOT</ozark.resteasy>
+		<krazo.version>1.0.0-SNAPSHOT</krazo.version>
 		<mvc.version>1.0-SNAPSHOT</mvc.version>
 	</properties>
 
@@ -55,9 +53,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.mvc-spec.ozark</groupId>
-			<artifactId>ozark-core</artifactId>
-			<version>${ozark.version}</version>
+			<groupId>org.eclipse.krazo</groupId>
+			<artifactId>krazo-core</artifactId>
+			<version>${krazo.version}</version>
 		</dependency>
 
 		<dependency>
@@ -109,9 +107,9 @@
 			</build>
 			<dependencies>
 				<dependency>
-					<groupId>org.mvc-spec.ozark</groupId>
-					<artifactId>ozark-jersey</artifactId>
-					<version>${ozark.jersey}</version>
+					<groupId>org.eclipse.krazo</groupId>
+					<artifactId>krazo-jersey</artifactId>
+					<version>${krazo.version}</version>
 				</dependency>
 			</dependencies>
 		</profile>
@@ -136,9 +134,9 @@
 			</build>
 			<dependencies>
 				<dependency>
-					<groupId>org.mvc-spec.ozark</groupId>
-					<artifactId>ozark-resteasy</artifactId>
-					<version>${ozark.reseasy}</version>
+					<groupId>org.eclipse.krazo</groupId>
+					<artifactId>krazo-resteasy</artifactId>
+					<version>${krazo.version}</version>
 				</dependency>
 			</dependencies>
 		</profile>

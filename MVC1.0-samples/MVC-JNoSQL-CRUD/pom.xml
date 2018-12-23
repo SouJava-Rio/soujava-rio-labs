@@ -4,10 +4,10 @@
 				http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.com.danieldias</groupId>
-	<artifactId>MVC1.0.Ozark</artifactId>
+	<artifactId>MVC1.0.Krazo</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>MVC1.0.Ozark Maven Webapp</name>
+	<name>MVC1.0.Krazo Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 
@@ -31,15 +31,15 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.mvc-spec.ozark</groupId>
-			<artifactId>ozark-core</artifactId>
-			<version>${ozark.version}</version>
+			<groupId>org.eclipse.krazo</groupId>
+			<artifactId>krazo-core</artifactId>
+			<version>${krazo.version}</version>
 		</dependency>
 
 		<dependency>
-			<groupId>org.mvc-spec.ozark</groupId>
-			<artifactId>ozark-jersey</artifactId>
-			<version>${ozark.version}</version>
+			<groupId>org.eclipse.krazo</groupId>
+			<artifactId>krazo-jersey</artifactId>
+			<version>${krazo.version}</version>
 		</dependency>
 
 		<dependency>
@@ -49,7 +49,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>MVC1.0.Ozark</finalName>
+		<finalName>MVC1.0.Krazo</finalName>
 		<plugins>
 			<plugin>
 				<groupId>fish.payara.maven.plugins</groupId>
@@ -80,7 +80,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 		<jnosql.version>0.0.7-SNAPSHOT</jnosql.version>
-		<ozark.version>1.0.0-SNAPSHOT</ozark.version>
+		<krazo.version>1.0.0-SNAPSHOT</krazo.version>
 		<version.payara>1.0.1</version.payara>
 	</properties>
 

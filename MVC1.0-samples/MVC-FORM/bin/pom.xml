@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.org.soujava.rio</groupId>
-	<artifactId>MVC-HelloWorld</artifactId>
+	<artifactId>MVC-FORM</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>MVC-HelloWorld Maven Webapp</name>
+	<name>MVC-FORM Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 	<organization>
@@ -21,7 +21,9 @@
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 		<version.payara>1.0.1</version.payara>
 		<version.swarm>2017.12.1</version.swarm>
-		<krazo.version>1.0.0-SNAPSHOT</krazo.version>
+		<ozark.version>1.0.0-SNAPSHOT</ozark.version>
+		<ozark.jersey>1.0.0-SNAPSHOT</ozark.jersey>
+		<ozark.resteasy>1.0.0-SNAPSHOT</ozark.resteasy>
 		<mvc.version>1.0-SNAPSHOT</mvc.version>
 	</properties>
 
@@ -53,16 +55,30 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.mvc-spec.ozark</groupId>
+			<artifactId>ozark-core</artifactId>
+			<version>${ozark.version}</version>
+		</dependency>
+
+		<dependency>
 			<groupId>org.eclipse.microprofile</groupId>
 			<artifactId>microprofile</artifactId>
 			<version>2.0.1</version>
 			<type>pom</type>
 			<scope>provided</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.14</version>
+			<scope>provided</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>
-		<finalName>MVC-HelloWorld</finalName>
+		<finalName>MVC-Post-Redirect-Get</finalName>
 	</build>
 
 	<profiles>
@@ -93,9 +109,9 @@
 			</build>
 			<dependencies>
 				<dependency>
-					<groupId>org.eclipse.krazo</groupId>
-					<artifactId>krazo-jersey</artifactId>
-					<version>${krazo.version}</version>
+					<groupId>org.mvc-spec.ozark</groupId>
+					<artifactId>ozark-jersey</artifactId>
+					<version>${ozark.jersey}</version>
 				</dependency>
 			</dependencies>
 		</profile>
@@ -120,9 +136,9 @@
 			</build>
 			<dependencies>
 				<dependency>
-					<groupId>org.eclipse.krazo</groupId>
-					<artifactId>krazo-resteasy</artifactId>
-					<version>${krazo.version}</version>
+					<groupId>org.mvc-spec.ozark</groupId>
+					<artifactId>ozark-resteasy</artifactId>
+					<version>${ozark.resteasy}</version>
 				</dependency>
 			</dependencies>
 		</profile>

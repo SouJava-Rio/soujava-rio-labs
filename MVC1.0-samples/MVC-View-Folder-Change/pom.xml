@@ -50,8 +50,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.mvc-spec.ozark</groupId>
-			<artifactId>ozark-core</artifactId>
+			<groupId>org.eclipse.krazo</groupId>
+			<artifactId>krazo-core</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 
@@ -104,8 +104,8 @@
 			</build>
 			<dependencies>
 				<dependency>
-					<groupId>org.mvc-spec.ozark</groupId>
-					<artifactId>ozark-jersey</artifactId>
+					<groupId>org.eclipse.krazo</groupId>
+					<artifactId>krazo-jersey</artifactId>
 					<version>1.0.0-SNAPSHOT</version>
 				</dependency>
 			</dependencies>
@@ -131,8 +131,8 @@
 			</build>
 			<dependencies>
 				<dependency>
-					<groupId>org.mvc-spec.ozark</groupId>
-					<artifactId>ozark-resteasy</artifactId>
+					<groupId>org.eclipse.krazo</groupId>
+					<artifactId>krazo-resteasy</artifactId>
 					<version>1.0.0-SNAPSHOT</version>
 				</dependency>
 			</dependencies>
