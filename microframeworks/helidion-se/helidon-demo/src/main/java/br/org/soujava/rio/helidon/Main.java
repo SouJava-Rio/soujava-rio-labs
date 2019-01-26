@@ -42,7 +42,7 @@ public final class Main {
      */
     private static Routing createRouting() {
         return Routing.builder()
-                .register(JsonSupport.get())
+                .register(JsonSupport.create())
                 .register("/greet", new GreetService())
                 .build();
     }
@@ -72,7 +72,7 @@ public final class Main {
 
         // Get webserver config from the "server" section of application.yaml
         ServerConfiguration serverConfig =
-                ServerConfiguration.fromConfig(config.get("server"));
+                ServerConfiguration.create(config.get("server"));
 
         WebServer server = WebServer.create(serverConfig, createRouting());
 
