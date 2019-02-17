@@ -9,7 +9,7 @@
     <description>demo of helidon se </description>
 
     <properties>
-        <helidon.version>0.11.0</helidon.version>
+        <helidon.version>1.0.0</helidon.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
         <mainClass>org.jboss.weld.environment.se.StartMain</mainClass>
@@ -19,7 +19,7 @@
         <deltaspike.version>1.9.0</deltaspike.version>
     </properties>
 
-    <!-- Dependencias para Helidon e deltaspike-->
+    <!-- Dependencias para Helidon e deltaspike -->
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -40,18 +40,19 @@
         </dependencies>
     </dependencyManagement>
 
-    <!-- Dependencias para Helidon-->
+    <!-- Dependencias para Helidon -->
     <dependencies>
         <dependency>
             <groupId>io.helidon.bundles</groupId>
             <artifactId>helidon-bundles-webserver</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.helidon.config</groupId>
-            <artifactId>helidon-config-yaml</artifactId>
+            <groupId>io.helidon.media.jsonb</groupId>
+            <artifactId>helidon-media-jsonb-server</artifactId>
         </dependency>
 
-       <!-- CDI-->
+
+        <!-- CDI -->
         <dependency>
             <groupId>org.jboss.weld.se</groupId>
             <artifactId>weld-se-shaded</artifactId>
@@ -59,7 +60,8 @@
             <type>jar</type>
         </dependency>
 
-        <!-- H2 DataBase-->
+
+        <!-- H2 DataBase -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -81,13 +83,12 @@
             <artifactId>deltaspike-data-module-impl</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <dependency>
-            <groupId>org.apache.deltaspike.cdictrl</groupId>
-            <artifactId>deltaspike-cdictrl-api</artifactId>
-            <scope>compile</scope>
-        </dependency>
+        <!-- <dependency> <groupId>org.apache.deltaspike.cdictrl</groupId> 
+            <artifactId>deltaspike-cdictrl-api</artifactId> <scope>compile</scope> </dependency> 
+            <dependency> <groupId>org.apache.deltaspike.cdictrl</groupId> <artifactId>deltaspike-cdictrl-weld</artifactId> 
+            <scope>runtime</scope> </dependency> -->
 
-        <!-- Necessario para o Java 10-->
+        <!-- Necessario para o Java 10 -->
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
