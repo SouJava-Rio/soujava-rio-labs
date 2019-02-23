@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>br.org.soujava.rio</groupId>
+    <artifactId>tomee.microprofile</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>tomee-microprofile</name>
+    <packaging>war</packaging>
+    <description>tomee-microprofile</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <tomee.version>8.0.0-M2</tomee.version>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse.microprofile</groupId>
+            <artifactId>microprofile</artifactId>
+            <version>2.0.1</version>
+            <type>pom</type>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>tomee-demo</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.tomee.maven</groupId>
+                <artifactId>tomee-maven-plugin</artifactId>
+                <version>${tomee.version}</version>
+                <executions>
+                    <execution>
+                        <id>executable-jar</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <context>ROOT</context>
+                    <tomeeClassifier>microprofile</tomeeClassifier>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
