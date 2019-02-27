@@ -29,11 +29,13 @@ public class App {
         var configuration = ServerConfiguration.builder().port(Integer.parseInt(port.orElse("8080"))).build();
 
         WebServer.create(configuration,Routing.builder().register(JsonBindingSupport.create())
+ 
                         .post("/events", Handler.create(Event.class, (req,res,events) -> {
                             this.eventRepository.save(events);
                             res.send(new ResponseModel(res.status().code(), "Evento salvo com Sucesso !"));
-                        })).get("/events", (req,res) -> res.send(eventRepository.findAll())))
-                        
+                        }))
+
+                        .get("/events", (req,res) -> res.send(eventRepository.findAll())))
                         .start();
     }
 }
