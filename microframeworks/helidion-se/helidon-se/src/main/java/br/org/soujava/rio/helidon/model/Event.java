@@ -65,14 +65,4 @@ public class Event {
     public String toString() {
         return "name:" + name + ", description:" + description + ", speaker:" + speaker;
     }
-    
-    public JsonObject forRest() {
-
-        var builder = Json.createObjectBuilder();
-        return builder.add("id", id)
-                      .add("name", name)
-                      .add("description", description)
-                      .add("speaker", speaker)
-                      .build();
-    }
 }

@@ -40,12 +40,4 @@ public class ResponseModel implements Serializable {
     public String toString() {
         return "ResponseModel [codigo=" + codigo + ", mensagem=" + mensagem + "]";
     }
-
-    public JsonObject forRest() {
-
-        var builder = Json.createObjectBuilder();
-        return builder.add("codigo", codigo)
-                      .add("mensagem", mensagem)
-                      .build();
-    }
 }
