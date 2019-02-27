@@ -1,4 +1,0 @@
-{
-  "runtime":{"majorVersion":"10"},
-  "command":"java -jar helidon-sample.jar"
-}
