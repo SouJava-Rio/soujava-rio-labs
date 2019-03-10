@@ -1,5 +1,7 @@
 package br.org.soujava.rio.starter;
 
+import java.util.Optional;
+
 import javax.enterprise.context.ApplicationScoped;
 
 import org.apache.deltaspike.cdise.api.CdiContainerLoader;
@@ -18,6 +20,9 @@ import io.vertx.ext.web.handler.BodyHandler;
 public class Main extends AbstractVerticle {
 
     private final static Logger LOG = Logger.getLogger(Main.class);
+    
+    public static Optional<String> portCloud = Optional.ofNullable(System.getenv("PORT"));
+    
     public static void main(String[] args ) throws Exception {
 
        var cdiContainer = CdiContainerLoader.getCdiContainer();
@@ -51,7 +56,8 @@ public class Main extends AbstractVerticle {
                           .end(Json.encodePrettily(new ResponseModel(routingContext.response().getStatusCode(), "Evento salvo com Sucesso !")));
         });
 
-        vertx.createHttpServer().requestHandler(router).listen(8080, res -> {
+
+        vertx.createHttpServer().requestHandler(router).listen(Integer.parseInt(portCloud.orElse("8080")), res -> {
             if (res.succeeded()) {
                 LOG.info("Server is now listening! " + System.currentTimeMillis());
             } else {

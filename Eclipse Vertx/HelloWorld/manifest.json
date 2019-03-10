@@ -1,0 +1,4 @@
+{
+  "runtime":{"majorVersion":"10"},
+  "command":"java -jar vertx-sample.jar"
+}
