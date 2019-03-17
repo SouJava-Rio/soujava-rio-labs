@@ -3,10 +3,10 @@ package br.org.soujava.rio.helidon.main;
 import java.io.IOException;
 import java.util.Optional;
 
-import javax.enterprise.event.Observes;
-import javax.inject.Inject;
+import javax.enterprise.context.ApplicationScoped;
 
-import org.jboss.weld.environment.se.events.ContainerInitialized;
+import org.apache.deltaspike.cdise.api.CdiContainerLoader;
+import org.apache.deltaspike.core.api.provider.BeanProvider;
 
 import br.org.soujava.rio.helidon.model.Event;
 import br.org.soujava.rio.helidon.model.ResponseModel;
@@ -20,18 +20,23 @@ import io.helidon.webserver.WebServer;
 public class App {
 
     public static Optional<String> port = Optional.ofNullable(System.getenv("PORT"));
-    
-    @Inject
-    private EventRepository eventRepository;
 
-     public void main(@Observes ContainerInitialized event) throws IOException {
+     public static void main(String[] args) throws IOException {
 
-        var configuration = ServerConfiguration.builder().port(Integer.parseInt(port.orElse("8080"))).build();
+         var cdiContainer = CdiContainerLoader.getCdiContainer();
+         cdiContainer.boot();
+
+          var contextControl = cdiContainer.getContextControl();
+          contextControl.startContext(ApplicationScoped.class);
+
+          var eventRepository = BeanProvider.getContextualReference(EventRepository.class, false);
+
+          var configuration = ServerConfiguration.builder().port(Integer.parseInt(port.orElse("8080"))).build();
 
         WebServer.create(configuration,Routing.builder().register(JsonBindingSupport.create())
  
                         .post("/events", Handler.create(Event.class, (req,res,events) -> {
-                            this.eventRepository.save(events);
+                            eventRepository.save(events);
                             res.send(new ResponseModel(res.status().code(), "Evento salvo com Sucesso !"));
                         }))
 
