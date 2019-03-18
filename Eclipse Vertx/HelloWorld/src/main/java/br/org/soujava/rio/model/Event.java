@@ -12,7 +12,7 @@ public class Event {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String name;
+    private String title;
 
     private String description;
 
@@ -20,9 +20,9 @@ public class Event {
 
     public Event() { }
 
-    public Event(String name, String description, String speaker) {
+    public Event(String title, String description, String speaker) {
         super();
-        this.name = name;
+        this.title = title;
         this.description = description;
         this.speaker = speaker;
     }
@@ -35,12 +35,12 @@ public class Event {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getDescription() {
@@ -61,6 +61,6 @@ public class Event {
 
     @Override
     public String toString() {
-        return "name:" + name + ", description:" + description + ", speaker:" + speaker;
+        return "name:" + title + ", description:" + description + ", speaker:" + speaker;
     }
 }

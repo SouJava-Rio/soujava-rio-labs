@@ -6,4 +6,4 @@ import org.apache.deltaspike.data.api.Repository;
 import br.org.soujava.rio.model.Event;
 
 @Repository
-public interface EventRepository extends EntityRepository<Event, Long> { }
+public interface  EventRepository extends EntityRepository<Event, Long>  { }

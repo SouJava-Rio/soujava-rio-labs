@@ -1,0 +1,4 @@
+Java Cloud Service-Java na Oracle Cloud-Alexandre dos Santos
+Serverless Java-It then turns to solutions available for developing serverless applications, or functions, with Java.-Ivar Grimstad
+JUnit 5 - Vale a pena migrar?-JUNI5-Marco Paulo
+Apache DeltaSpike Data-Apache DeltaSpike é uma coleção de extensões CDI portáveis que fornecem recursos úteis para desenvolvedores Java .-Daniel Dias
