@@ -50,13 +50,6 @@ public class TemplateEngineController {
 	}
 
 	@GET
-	@Path("groovy")
-	@View("resultado.tpl")
-	public void getGroovy() {
-		this.models.put("groovy", "Groovy");
-	}
-	
-	@GET
 	@Path("jsp")
 	@View("resultado.jsp")
 	public void getJSP() {

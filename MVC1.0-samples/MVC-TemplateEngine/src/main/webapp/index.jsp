@@ -18,7 +18,6 @@
 	<a href="app/template/handlebars">Handlebars</a> <br>
 	<a href="app/template/freemarker">Freemarker</a> <br>
 	<a href="app/template/asciidoc">AsciiDoc</a> <br>
-	<a href="app/template/groovy">Groovy</a> <br>
 	<a href="app/template/jtwig">Jtwig</a> <br>
 </body>
 </html>
