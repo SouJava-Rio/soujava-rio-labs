@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>MVC- Tipo de Retornos</title>
+<title>MVC- Tipos de Retornos</title>
 </head>
 <body>
-	Parabéns, chegou aqui usando ${retorno} ! .
+	<h1>Parabéns, chegou aqui usando ${retorno} ! .</h1>
 </body>
 </html>

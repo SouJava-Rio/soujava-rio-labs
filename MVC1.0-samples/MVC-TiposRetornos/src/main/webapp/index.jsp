@@ -10,6 +10,6 @@
 	<a href="app/retornos/void">Retorno com Void - @View</a> <br>
 	<a href="app/retornos/String">Retorno com String</a> <br>
 	<a href="app/retornos/Response">Retorno com Response - JAX-RS</a> <br>
-	<a href="app/retornos/ViewAble">Retorno com Viewable - Ozark-RI</a>
+	<a href="app/retornos/ViewAble">Retorno com Viewable - Krazo-RI</a>
 </body>
 </html>

@@ -38,15 +38,11 @@ import org.eclipse.krazo.Properties;
  */
 @ApplicationPath("app")
 public class APP extends Application {
-    
-    /* (non-Javadoc)
-     * @see javax.ws.rs.core.Application#getProperties()
-     */
+
     @Override
     public Map<String, Object> getProperties() {
-        Map<String,Object> ma= new HashMap<>();
-        ma.put(Properties.DEFAULT_VIEW_FILE_EXTENSION, "jsp");
-        return ma;
-        
+        Map<String,Object> defaultViewFile= new HashMap<>();
+        defaultViewFile.put(Properties.DEFAULT_VIEW_FILE_EXTENSION, "jsp");
+        return defaultViewFile;        
     }
 }

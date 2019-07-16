@@ -69,7 +69,7 @@ public class RetornosController {
 	@GET
 	@Path("ViewAble")
 	public Viewable getViewAble() {
-		this.models.put("retorno", "Retorno do Tipo Viewable,especifico da RI OZARK");
+		this.models.put("retorno", "Retorno do Tipo Viewable,especifico da RI Krazo");
 		return new Viewable("retorno");
 	}
 }
