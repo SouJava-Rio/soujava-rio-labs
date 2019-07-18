@@ -36,7 +36,7 @@ public class SecondLawNewton {
 	public static void main(String[] args) {
 
 		var massa = Quantities.getQuantity(15, Units.KILOGRAM);
-		var aceleracao = Quantities.getQuantity(3, Units.METRE_PER_SQUARE_SECOND);
+		var aceleracao = Quantities.getQuantity(30, Units.METRE_PER_SQUARE_SECOND);
 		var forca = massa.multiply(aceleracao).asType(Force.class);
 		
 		System.out.println(forca.to(Units.NEWTON));
