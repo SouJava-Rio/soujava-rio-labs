@@ -78,7 +78,7 @@
 		<dependency>
 			<artifactId>hibernate-validator</artifactId>
 			<groupId>org.hibernate</groupId>
-			<version>5.4.1.Final</version>
+			<version>5.4.2.Final</version>
 		</dependency>
 
 		<dependency>
